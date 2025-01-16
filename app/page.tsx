@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Domains />
-      <Separator />
+      {/* <Separator /> */}
       <Projects />
     </main>
   )

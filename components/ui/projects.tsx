@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"; 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -55,10 +56,13 @@ const ProjectGrid = ({ projects }: { projects: typeof completedProjects }) => {
             <CardHeader className="flex-grow text-center">
               <CardTitle>{project.title}</CardTitle>
             </CardHeader>
-            <CardFooter>
-              <Button className="w-full" onClick={() => openProjectDetails(project)}>
+            <CardFooter className="justify-center">
+                <span className="cursor-pointer border-b-2 border-transparent hover:border-inherit text-muted-foreground" onClick={() => openProjectDetails(project)}>
+                    Learn More
+                </span>
+              {/* <Button className="w-full" onClick={() => openProjectDetails(project)}>
                 Learn More
-              </Button>
+              </Button> */}
             </CardFooter>
           </Card>
         ))}
@@ -76,7 +80,7 @@ const ProjectGrid = ({ projects }: { projects: typeof completedProjects }) => {
   export default function Projects() {
     return (
       <div className="flex flex-col h-screen px-6 md:px-12">
-        <h1 className="text-2xl font-bold text-center mb-6 lg:mt-24 mt-12">Our Projects</h1>
+        <h1 className="text-4xl font-bold text-center mb-6 lg:mt-24 mt-12">Our Projects</h1>
         <Tabs defaultValue="completed" className="w-full">
           <TabsList className="flex space-x-4 p-6 justify-center">
             <TabsTrigger value="completed" className="px-6 py-2 text-sm font-medium">
@@ -89,7 +93,7 @@ const ProjectGrid = ({ projects }: { projects: typeof completedProjects }) => {
           <TabsContent value="completed" className="flex-grow mt-6">
             <Card className="h-full flex flex-col">
               <CardHeader>
-                <CardTitle className="text-center text-xl">Completed Projects</CardTitle>
+                <CardTitle className="text-center text-2xl">Completed Projects</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ProjectGrid projects={completedProjects} />
@@ -99,7 +103,7 @@ const ProjectGrid = ({ projects }: { projects: typeof completedProjects }) => {
           <TabsContent value="in-progress" className="flex-grow mt-6">
             <Card className="h-full flex flex-col">
               <CardHeader>
-                <CardTitle className="text-center text-xl">Work in Progress</CardTitle>
+                <CardTitle className="text-center text-2xl">Work in Progress</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ProjectGrid projects={workInProgressProjects} />

@@ -24,32 +24,32 @@ export default function Navbar() {
                 height={32}
                 className="w-8 h-8"
               />
-              <span className="ml-2 text-white font-semibold text-xl tracking-tight">FINOVA</span>
+              <span className="ml-2 text-foreground font-semibold text-xl tracking-tight">FINOVA</span>
             </Link>
 
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center justify-center absolute left-1/2 -translate-x-1/2">
               <Link
                 href="/"
-                className="text-white px-4 py-2 text-sm font-medium transition-colors tracking-wide"
+                className="text-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
               >
                 Home
               </Link>
               <Link
                 href="/projects"
-                className="text-[#CCCCCC] hover:text-white px-4 py-2 text-sm font-medium transition-colors tracking-wide"
+                className="text-muted-foreground hover:text-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
               >
                 Projects
               </Link>
               <Link
                 href="/team"
-                className="text-[#CCCCCC] hover:text-white px-4 py-2 text-sm font-medium transition-colors tracking-wide"
+                className="text-muted-foreground hover:text-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
               >
                 Team
               </Link>
               <Link
                 href="/apply"
-                className="text-[#CCCCCC] hover:text-white px-4 py-2 text-sm font-medium transition-colors tracking-wide"
+                className="text-muted-foreground hover:text-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
               >
                 Apply
               </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/90 hover:text-white transition-colors"
+                className="text-foreground hover:text-accent-foreground transition-colors"
               >
                 <FiInstagram className="w-5 h-5" />
                 <span className="sr-only">Instagram</span>
@@ -70,7 +70,7 @@ export default function Navbar() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/90 hover:text-white transition-colors"
+                className="text-foreground hover:text-accent-foreground transition-colors"
               >
                 <FiLinkedin className="w-5 h-5" />
                 <span className="sr-only">LinkedIn</span>
@@ -79,7 +79,7 @@ export default function Navbar() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/90 hover:text-white transition-colors"
+                className="text-foreground hover:text-accent-foreground transition-colors"
               >
                 <FiGithub className="w-5 h-5" />
                 <span className="sr-only">GitHub</span>
