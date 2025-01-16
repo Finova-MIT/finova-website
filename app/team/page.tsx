@@ -1,4 +1,3 @@
-import { Separator } from "@/components/ui/separator"
 import { Card, CardHeader, CardFooter } from "@/components/ui/card"
 import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa"
 
@@ -112,14 +111,14 @@ const boardMembers = [
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <div className="flex flex-col gap-6 items-center mb-16">
       <h1 className="text-6xl text-center mt-40 font-extrabold">
         BOARD
       </h1>
-      <p className="lg:mx-60 md:mx-32 mx-16 text-muted-foreground mt-8">
+      <p className="lg:mx-60 md:mx-32 mx-16 text-muted-foreground max-w-md text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid laborum ipsam veritatis doloribus temporibus quo non neque amet debitis nulla sint perspiciatis, dicta nihil eos. Tenetur nihil nobis sapiente?
       </p>
-
-      <Separator className="my-10" />
+      </div>
 
       <div className="lg:mx-60 md:mx-32 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
         {boardMembers.map((member, index) => (
@@ -129,6 +128,7 @@ export default function Home() {
                 src={member.image}
                 alt={`${member.name}'s picture`}
                 className="w-24 h-24 rounded-full object-cover"
+                loading="lazy"
               />
               <h2 className="text-lg font-bold mt-4">{member.name}</h2>
               <p className="text-muted-foreground text-sm text-center">{member.designation}</p>

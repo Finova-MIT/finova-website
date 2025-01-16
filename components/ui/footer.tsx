@@ -2,13 +2,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="bg-secondary flex lg:gap-16 md:gap-8 gap-4 py-8 lg:px-48 md:px-8 px-4 justify-between mt-8 text-sm">
+    <div className="bg-secondary flex lg:gap-16 md:gap-8 gap-4 py-8 lg:px-48 md:px-8 px-4 justify-between mt-8 lg:text-sm md:text-sm text-xs">
       <div className="">
-        <h1 className="font-bold text-lg my-2">Quick Links</h1>
+        <h1 className="font-bold lg:text-lg md:text-lg text-md my-2">Quick Links</h1>
         <div className="flex flex-col">
           <Link
             href="/#"
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="">
-        <h1 className="font-bold text-lg my-2">Nav Links</h1>
+        <h1 className="font-bold lg:text-lg md:text-lg text-md my-2">Nav Links</h1>
         <div className="flex flex-col">
           <Link
             href="/"
@@ -66,13 +66,13 @@ export default function Footer() {
       </div>
 
       <div className="">
-        <h1 className="font-bold text-lg my-2">Socials</h1>
+        <h1 className="font-bold lg:text-lg md:text-lg text-md my-2">Socials</h1>
         <div className="flex flex-col">
           <Link
             href="https://www.instagram.com/finova.manipal/"
             className="text-muted-foreground hover:text-secondary-foreground flex gap-2 items-center"
           >
-            <FiInstagram className="text-lg" />
+            <FaInstagram className="text-lg" />
             <span>Instagram</span>
           </Link>
 
@@ -80,7 +80,7 @@ export default function Footer() {
             href="https://linkedin.com"
             className="text-muted-foreground hover:text-secondary-foreground flex gap-2 items-center"
           >
-            <FiLinkedin className="text-lg" />
+            <FaLinkedin className="text-lg" />
             <span>LinkedIn</span>
           </Link>
 
@@ -88,7 +88,7 @@ export default function Footer() {
             href="https://github.com"
             className="text-muted-foreground hover:text-secondary-foreground flex gap-2 items-center"
           >
-            <FiGithub className="text-lg" />
+            <FaGithub className="text-lg" />
             <span>GitHub</span>
           </Link>
         </div>
@@ -101,13 +101,14 @@ export default function Footer() {
             alt="Finova Logo"
             width={32}
             height={32}
-            className="w-8 h-8"
+            className="lg:w-8 md:w-8 w-4 lg:h-8 md:h-8 h-4"
+            loading="lazy"
           />
-          <span className="ml-2 text-foreground font-semibold text-xl tracking-tight">
+          <span className="ml-2 text-foreground font-semibold lg:text-lg md:text-lg text-md tracking-tight">
             FINOVA
           </span>
         </div>
-        <p className="text-muted-foreground max-w-md">
+        <p className="text-muted-foreground max-w-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam pariatur cupiditate ut blanditiis nisi alias repellendus. Corporis at harum quo amet expedita sint quasi doloremque, illum ipsam sunt, dolorem provident.
         </p>
       </div>

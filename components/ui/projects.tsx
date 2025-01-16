@@ -92,6 +92,7 @@ function ProjectDetailsModal({
                       src={image}
                       alt={`${project.title} - Image ${index + 1}`}
                       className="rounded-lg object-cover w-full h-full"
+                      loading="lazy"
                     />
                   </div>
                 </CarouselItem>
@@ -188,6 +189,7 @@ export default function Projects() {
                           src={image}
                           alt={`${selectedProject.title} - Image ${index + 1}`}
                           className="rounded-lg object-cover w-full h-full"
+                          loading="lazy"
                         />
                       </div>
                     </CarouselItem>

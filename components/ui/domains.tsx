@@ -117,6 +117,7 @@ export default function Domains() {
                   src={selectedDomain.image}
                   alt={selectedDomain.name}
                   className="rounded-lg object-cover w-full h-full"
+                  loading="lazy"
                 />
               </AspectRatio>
               <h2 className="text-2xl font-bold mb-4">{selectedDomain.name}</h2>

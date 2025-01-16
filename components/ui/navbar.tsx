@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { FiGithub, FiLinkedin, FiInstagram, FiMenu, FiX } from "react-icons/fi";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FiMenu, FiX } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,6 +23,7 @@ export default function Navbar() {
               width={32}
               height={32}
               className="w-8 h-8"
+              loading="lazy"
             />
             <span className="ml-2 text-foreground font-semibold text-xl tracking-tight">
               FINOVA
@@ -64,7 +66,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="text-foreground hover:text-muted-foreground transition-colors"
             >
-              <FiInstagram className="w-5 h-5" />
+              <FaInstagram className="w-5 h-5" />
               <span className="sr-only">Instagram</span>
             </Link>
             <Link
@@ -73,7 +75,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="text-foreground hover:text-muted-foreground transition-colors"
             >
-              <FiLinkedin className="w-5 h-5" />
+              <FaLinkedin className="w-5 h-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
@@ -82,7 +84,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="text-foreground hover:text-muted-foreground transition-colors"
             >
-              <FiGithub className="w-5 h-5" />
+              <FaGithub className="w-5 h-5" />
               <span className="sr-only">GitHub</span>
             </Link>
           </div>
@@ -134,17 +136,17 @@ export default function Navbar() {
               <div className="flex items-center gap-8 mt-8 mb-16">
                 {[
                   {
-                    icon: FiInstagram,
+                    icon: FaInstagram,
                     href: "https://instagram.com",
                     label: "Instagram",
                   },
                   {
-                    icon: FiLinkedin,
+                    icon: FaLinkedin,
                     href: "https://linkedin.com",
                     label: "LinkedIn",
                   },
                   {
-                    icon: FiGithub,
+                    icon: FaGithub,
                     href: "https://github.com",
                     label: "GitHub",
                   },
