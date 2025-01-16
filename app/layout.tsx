@@ -21,9 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`min-h-screen ${inter.className} dark`}>
+      <body className={`min-h-screen ${inter.className} overflow-x-hidden flex flex-col min-h-screen dark`}>
         <Navbar />
-        {children}
+        <div className="flex-grow">{children}</div>
         <Footer />
       </body>
     </html>

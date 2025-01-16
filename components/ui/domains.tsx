@@ -117,7 +117,7 @@ export default function Domains() {
         {domains.map((domain, index) => (
           <div
             key={index}
-            className="rounded-lg p-4"
+            className="rounded-lg p-4 border-border border-2"
           >
             <div className="flex items-center space-x-4">
               <div className="text-3xl text-accent-foreground">{domain.icon}</div>

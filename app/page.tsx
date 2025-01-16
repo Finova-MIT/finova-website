@@ -6,7 +6,7 @@ import About from "@/components/ui/about"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="">
       <Hero />
       <About />
       <Domains />

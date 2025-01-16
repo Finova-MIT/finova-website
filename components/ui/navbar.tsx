@@ -70,7 +70,7 @@ export default function Navbar() {
               <span className="sr-only">Instagram</span>
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://in.linkedin.com/company/finova-mit-manipal"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-muted-foreground transition-colors"
@@ -137,12 +137,12 @@ export default function Navbar() {
                 {[
                   {
                     icon: FaInstagram,
-                    href: "https://instagram.com",
+                    href: "https://www.instagram.com/finova.manipal/",
                     label: "Instagram",
                   },
                   {
                     icon: FaLinkedin,
-                    href: "https://linkedin.com",
+                    href: "https://in.linkedin.com/company/finova-mit-manipal",
                     label: "LinkedIn",
                   },
                   {

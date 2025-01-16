@@ -84,7 +84,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="https://linkedin.com"
+            href="https://in.linkedin.com/company/finova-mit-manipal"
             className="text-muted-foreground hover:text-secondary-foreground flex gap-2 items-center"
           >
             <FaLinkedin className="text-lg" />
@@ -116,7 +116,9 @@ export default function Footer() {
           </span>
         </div>
         <p className="text-muted-foreground max-w-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam pariatur cupiditate ut blanditiis nisi alias repellendus. Corporis at harum quo amet expedita sint quasi doloremque, illum ipsam sunt, dolorem provident.
+            For any enquires, contact: <br />
+                <b>+91 97113 90266</b> (Vedant Agarwal - President) <br />
+                <b>+91 91041 47937</b> (Suhani Patel - Vice President)
         </p>
       </div>
     </div>

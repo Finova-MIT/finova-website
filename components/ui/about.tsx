@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import AnimatedCounter from "./animated-counter";
 
 const stats = [
+  { attribute: "Domains", value: 8 },
+  { attribute: "Members", value: 89 },
   { attribute: "Projects", value: 1 },
   { attribute: "Years", value: 0 },
-  { attribute: "Members", value: 89 },
-  { attribute: "Domains", value: 8 },
 ];
 
 const headingAnimation = {
@@ -34,10 +34,7 @@ export default function About() {
         <h1 className="text-4xl font-bold text-center mb-6">About Us</h1>
 
         <p className="text-muted-foreground max-w-md">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-          asperiores expedita quia tempore reiciendis atque alias facilis qui
-          blanditiis culpa quisquam provident, quae facere corrupti ipsa
-          necessitatibus! Odio, ipsum enim?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere temporibus tenetur quos et quo facilis error aliquid quasi veniam possimus recusandae nisi, maiores sit laudantium rem eius deleniti repudiandae illum.
         </p>
       </motion.div>
 
@@ -51,7 +48,7 @@ export default function About() {
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="flex flex-col items-center border-border border-2 lg:px-16 md:px-12 px-8 py-4"
+            className="flex flex-col items-center border-border border-2 rounded-lg hover:bg-border transition-colors ease-out duration-300 lg:px-16 md:px-12 px-8 py-4"
           >
             <h1 className="lg:text-4xl md:text-2xl text-xl font-black">
               <AnimatedCounter from={0} to={stat.value} />
