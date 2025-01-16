@@ -6,7 +6,7 @@ import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <div className="bg-secondary flex lg:gap-16 gap-4 p-8 justify-between lg:px-48 mt-8">
+    <div className="bg-secondary flex lg:gap-16 gap-4 p-8 justify-between lg:px-48 mt-8 text-sm">
       <div className="">
         <h1 className="font-bold text-lg my-2">Quick Links</h1>
         <div className="flex flex-col">
@@ -95,10 +95,10 @@ export default function Footer() {
       </div>
 
       <div className="">
-        <div className="flex items-center">
+        <div className="flex items-center my-2">
           <Image
             src="/logo.png"
-            alt="FINOVA"
+            alt="Finova Logo"
             width={32}
             height={32}
             className="w-8 h-8"
