@@ -6,7 +6,7 @@ import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <div className="bg-secondary flex lg:gap-16 md:gap-4 gap-2 py-8 lg:px-8 md:px-8 px-2 justify-between lg:px-48 mt-8 text-sm">
+    <div className="bg-secondary flex lg:gap-16 md:gap-8 gap-4 py-8 lg:px-48 md:px-8 px-4 justify-between mt-8 text-sm">
       <div className="">
         <h1 className="font-bold text-lg my-2">Quick Links</h1>
         <div className="flex flex-col">
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="">
-        <h1 className="font-bold text-lg my-2">Navigation</h1>
+        <h1 className="font-bold text-lg my-2">Nav Links</h1>
         <div className="flex flex-col">
           <Link
             href="/"
