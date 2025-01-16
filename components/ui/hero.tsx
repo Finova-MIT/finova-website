@@ -27,13 +27,13 @@ export default function Hero() {
         className="px-4 font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
       <Boxes />
-      <p className={cn("lg:text-5xl text-4xl text-white relative z-20")}>
+      <p className={cn("lg:text-5xl text-4xl text-foreground relative z-20")}>
         Introducing {" "}
-        <Highlight className="text-black dark:text-white">
+        <Highlight>
         FINOVA
         </Highlight>
       </p>
-      <p className="lg:text-2xl text-xl text-center mt-2 text-neutral-300 relative z-20">
+      <p className="lg:text-2xl text-xl text-center mt-2 text-muted-foreground relative z-20">
         Club catchphrase / slogan goes here
       </p>
       </motion.h1>
