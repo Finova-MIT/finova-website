@@ -31,25 +31,25 @@ export default function Navbar() {
             <div className="hidden md:flex items-center justify-center absolute left-1/2 -translate-x-1/2">
               <Link
                 href="/"
-                className="text-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
+                className="text-foreground hover:text-muted-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
               >
                 Home
               </Link>
               <Link
                 href="/projects"
-                className="text-muted-foreground hover:text-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
+                className="text-foreground hover:text-muted-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
               >
                 Projects
               </Link>
               <Link
                 href="/team"
-                className="text-muted-foreground hover:text-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
+                className="text-foreground hover:text-muted-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
               >
                 Team
               </Link>
               <Link
                 href="/apply"
-                className="text-muted-foreground hover:text-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
+                className="text-foreground hover:text-muted-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
               >
                 Apply
               </Link>
@@ -58,10 +58,10 @@ export default function Navbar() {
             {/* Desktop Social Icons */}
             <div className="hidden md:flex items-center gap-4">
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/finova.manipal/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground hover:text-accent-foreground transition-colors"
+                className="text-foreground hover:text-muted-foreground transition-colors"
               >
                 <FiInstagram className="w-5 h-5" />
                 <span className="sr-only">Instagram</span>
@@ -70,7 +70,7 @@ export default function Navbar() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground hover:text-accent-foreground transition-colors"
+                className="text-foreground hover:text-muted-foreground transition-colors"
               >
                 <FiLinkedin className="w-5 h-5" />
                 <span className="sr-only">LinkedIn</span>
@@ -79,7 +79,7 @@ export default function Navbar() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground hover:text-accent-foreground transition-colors"
+                className="text-foreground hover:text-muted-foreground transition-colors"
               >
                 <FiGithub className="w-5 h-5" />
                 <span className="sr-only">GitHub</span>
