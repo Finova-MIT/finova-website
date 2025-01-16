@@ -36,10 +36,10 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                href="/projects"
+                href="/gallery"
                 className="text-foreground hover:text-muted-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
               >
-                Projects
+                Gallery
               </Link>
               <Link
                 href="/team"
@@ -115,7 +115,7 @@ export default function Navbar() {
             </button>
             <div className="flex flex-col items-center justify-between h-full">
               <div className="flex flex-col items-center space-y-6 text-lg">
-                {['Home', 'Projects', 'Team', 'Apply'].map((item, index) => (
+                {['Home', 'Gallery', 'Team', 'Apply'].map((item, index) => (
                   <Link
                     key={item}
                     href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}

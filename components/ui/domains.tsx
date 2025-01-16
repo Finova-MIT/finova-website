@@ -18,49 +18,49 @@ const domains = [
     name: "Quant and Algo Trading",
     icon: <FaChartLine />,
     description: "Specialized in developing sophisticated algorithmic trading strategies and quantitative analysis tools for financial markets.",
-    image: "/quant-and-algo-trading.jpg"
+    image: "/domains/quant-and-algo-trading.jpg"
   },
   {
     name: "Finance and Banking",
     icon: <FaUniversity />,
     description: "Comprehensive solutions for banking systems, payment processing, and financial service applications.",
-    image: "/finance-and-banking.jpg"
+    image: "/domains/finance-and-banking.jpg"
   },
   {
     name: "Blockchain and Web3",
     icon: <FaBitcoin />,
     description: "Expertise in blockchain technology, smart contracts, and decentralized application development.",
-    image: "/blockchain-and-web3.jpg"
+    image: "/domains/blockchain-and-web3.jpg"
   },
   {
     name: "Cybersecurity",
     icon: <FaShieldAlt />,
     description: "Advanced security solutions and consulting services to protect digital assets and infrastructure.",
-    image: "/cybersecurity.jpg"
+    image: "/domains/cybersecurity.jpg"
   },
   {
     name: "Data Analysis and Machine Learning",
     icon: <FaDatabase />,
     description: "Leveraging AI and ML technologies for data-driven insights and predictive analytics.",
-    image: "/data-analysis-and-ml.jpg"
+    image: "/domains/data-analysis-and-ml.jpg"
   },
   {
     name: "Fullstack Development",
     icon: <FaCode />,
     description: "End-to-end web and application development using cutting-edge technologies and frameworks.",
-    image: "/fullstack.jpg"
+    image: "/domains/fullstack.jpg"
   },
   {
     name: "Public Relations",
     icon: <FaBullhorn />,
     description: "Strategic communication and brand management services for maximum market impact.",
-    image: "/public-relations.jpg"
+    image: "/domains/public-relations.jpg"
   },
   {
     name: "Social Media and Graphic Design",
     icon: <FaPalette />,
     description: "Creative digital content and visual design solutions for enhanced brand presence.",
-    image: "/graphic-design.jpg"
+    image: "/domains/graphic-design.jpg"
   },
 ];
 
@@ -68,7 +68,7 @@ export default function Domains() {
   const [selectedDomain, setSelectedDomain] = useState(domains[0]);
 
   return (
-    <div id="domains" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:pt-8 pb-12">
+    <div id="domains" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:pt-8 pb-12 h-screen">
       <h1 className="text-4xl font-bold text-center mb-6 pt-4 mt-8 mb-12">Our Domains</h1>
       
       {/* Mobile View */}

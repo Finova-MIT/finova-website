@@ -1,12 +1,12 @@
 import { Separator } from "@/components/ui/separator"
-import { Card, CardHeader, CardFooter, CardContent } from "@/components/ui/card" // Adjust import based on your structure
-import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa" // React Icons for social links
+import { Card, CardHeader, CardFooter } from "@/components/ui/card"
+import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa"
 
 const boardMembers = [
   {
     name: "Vedant Agarwal",
     designation: "President",
-    image: "/president.jpg",
+    image: "/board/president.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -14,7 +14,7 @@ const boardMembers = [
   { 
     name: "Suhani Patel",
     designation: "Vice President",
-    image: "/vice-president.jpg",
+    image: "/board/vice-president.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -22,7 +22,7 @@ const boardMembers = [
   { 
     name: "Samriddhi Mishra",
     designation: "General Secretary",
-    image: "/general-secretary.jpg",
+    image: "/board/general-secretary.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -30,7 +30,7 @@ const boardMembers = [
   { 
     name: "Aayushman Jain",
     designation: "Treasurer",
-    image: "/treasurer.jpg",
+    image: "/board/treasurer.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -38,7 +38,7 @@ const boardMembers = [
   { 
     name: "Nishant Dahiya",
     designation: "Operational Secretary (?)",
-    image: "/opsec.jpg",
+    image: "/board/opsec.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -46,7 +46,7 @@ const boardMembers = [
   { 
     name: "Nihar Madhekar",
     designation: "Quant & Algo Trading Head",
-    image: "/quant-and-algo-trading-head.jpg",
+    image: "/board/quant-and-algo-trading-head.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -54,7 +54,7 @@ const boardMembers = [
   { 
     name: "Debarun Karmakar",
     designation: "Finance & Banking Head",
-    image: "finance-and-banking-head.jpg",
+    image: "/board/finance-and-banking-head.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -62,7 +62,7 @@ const boardMembers = [
   { 
     name: "Suhani Patel",
     designation: "Blockchain & Web3 Head",
-    image: "/blockchain-and-web3-head.jpg",
+    image: "/board/blockchain-and-web3-head.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -70,7 +70,7 @@ const boardMembers = [
   { 
     name: "Sujai",
     designation: "Cybersecurity Head",
-    image: "/cybersecurity-head.jpg",
+    image: "/board/cybersecurity-head.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -78,7 +78,7 @@ const boardMembers = [
   { 
     name: "Abhuday Singh",
     designation: "Data Analysis & ML Head",
-    image: "/data-analysis-and-ml-head.jpg",
+    image: "/board/data-analysis-and-ml-head.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -86,7 +86,7 @@ const boardMembers = [
   { 
     name: "Pranav G Nayak",
     designation: "Fullstack Development Head",
-    image: "/fullstack-head.jpg",
+    image: "/board/fullstack-head.jpg",
     email: "pranavgnayak@gmail.com",
     linkedin: "",
     instagram: "",
@@ -94,7 +94,7 @@ const boardMembers = [
   { 
     name: "Ayush Das",
     designation: "Public Relations Head",
-    image: "/pr-head.jpg",
+    image: "/board/pr-head.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -102,7 +102,7 @@ const boardMembers = [
   { 
     name: "Aditya Sharma",
     designation: "Social Media & Graphic Design Head",
-    image: "/smgd-head.jpg",
+    image: "/board/smgd-head.jpg",
     email: "",
     linkedin: "",
     instagram: "",
