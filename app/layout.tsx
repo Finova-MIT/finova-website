@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Finova",
   description: "Finova - Innovation in Finance",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo.png"
   }
 }
 

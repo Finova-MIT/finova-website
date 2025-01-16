@@ -69,7 +69,7 @@ export default function Domains() {
 
   return (
     <div id="domains" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:pt-8 pb-12 h-screen">
-      <h1 className="text-4xl font-bold text-center mb-6 pt-4 mt-8 mb-12">Our Domains</h1>
+      <h1 className="text-4xl font-bold text-center mb-6 pt-4 mt-12">Our Domains</h1>
       
       {/* Mobile View */}
       <div className="md:hidden lg:hidden space-y-4 max-w-md mx-auto">

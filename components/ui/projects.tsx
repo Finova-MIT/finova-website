@@ -70,7 +70,7 @@ function ProjectDetailsModal({
 }: ProjectDetailsModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-md">
+      <DialogContent className="max-w-80 mx-auto my-auto">
         <DialogHeader>
           <DialogTitle>{project.title}</DialogTitle>
           <DialogDescription className="items-center flex flex-col">
@@ -127,7 +127,7 @@ export default function Projects() {
       id="projects"
       className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:pt-8 pb-12 h-screen"
     >
-      <h1 className="text-4xl font-bold text-center mb-6 pt-4 mt-8 mb-12">
+      <h1 className="text-4xl font-bold text-center mb-6 pt-4 mt-12">
         Our Projects
       </h1>
 
