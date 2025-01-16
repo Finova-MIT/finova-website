@@ -2,13 +2,13 @@ import { Separator } from "@/components/ui/separator"
 import Hero from "@/components/ui/hero"
 import Domains from "@/components/ui/domains"
 import Projects from "@/components/ui/projects"
-import Stats from "@/components/ui/stats"
+import About from "@/components/ui/about"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
-      <Stats />
+      <About />
       <Domains />
       {/* <Separator /> */}
       <Projects />

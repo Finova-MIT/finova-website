@@ -21,9 +21,9 @@ const rightDivAnimation = {
   visible: { opacity: 1, x: 0, transition: { duration: 2, ease: "easeOut" } },
 };
 
-export default function Stats() {
+export default function About() {
   return (
-    <div className="py-16 flex flex-row items-start justify-between lg:mx-48 md:mx-24 mx-12 gap-20">
+    <div id="about" className="py-16 flex flex-row items-start justify-between lg:mx-48 md:mx-24 mx-12 gap-20">
       <motion.div
         className="flex flex-col"
         initial="hidden"

@@ -18,6 +18,13 @@ export default function Footer() {
           </Link>
 
           <Link
+            href="/#about"
+            className="text-muted-foreground hover:text-secondary-foreground"
+          >
+            <span>About</span>
+          </Link>
+
+          <Link
             href="/#domains"
             className="text-muted-foreground hover:text-secondary-foreground"
           >
