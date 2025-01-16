@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -55,6 +56,21 @@ const workInProgressProjects: Project[] = [
     images: ["/projects/test1.jpg", "/projects/test2.jpg"],
   },
 ];
+
+const headingAnimation = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 2, ease: "easeOut" } },
+};
+
+const leftDivAnimation = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 2, ease: "easeOut" } },
+};
+
+const rightDivAnimation = {
+  hidden: { opacity: 0, x: 50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 2, ease: "easeOut" } },
+};
 
 // ProjectDetails Modal Component
 type ProjectDetailsModalProps = {
@@ -128,12 +144,24 @@ export default function Projects() {
       id="projects"
       className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:pt-8 pb-12 h-screen"
     >
-      <h1 className="text-4xl font-bold text-center mb-6 pt-4 mt-12">
+      <motion.h1
+        className="text-4xl font-bold text-center mb-6 pt-4 mt-12"
+        initial="hidden"
+        whileInView="visible"
+        variants={headingAnimation}
+        viewport={{ once: true }}
+      >
         Our Projects
-      </h1>
+      </motion.h1>
 
       {/* Mobile View */}
-      <div className="md:hidden lg:hidden space-y-4 max-w-md mx-auto">
+      <motion.div
+        className="md:hidden lg:hidden space-y-4 max-w-md mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        variants={headingAnimation}
+        viewport={{ once: true }}
+      >
         <Tabs defaultValue="completed" className="w-full">
           <TabsList className="flex space-x-4 justify-center mb-4">
             <TabsTrigger value="completed">Completed</TabsTrigger>
@@ -154,7 +182,10 @@ export default function Projects() {
                     <p className="text-muted-foreground mb-4">
                       {project.description}
                     </p>
-                    <Button className="" onClick={() => handleMobileLearnMore(project)}>
+                    <Button
+                      className=""
+                      onClick={() => handleMobileLearnMore(project)}
+                    >
                       Learn More
                     </Button>
                   </div>
@@ -172,14 +203,20 @@ export default function Projects() {
             onClose={() => setIsModalOpen(false)}
           />
         )}
-      </div>
+      </motion.div>
 
       {/* Desktop View */}
       <div className="md:block lg:block hidden relative lg:-skew-x-12">
         <div className="relative z-10 grid grid-cols-12 gap-12">
           {/* Left Side - Project Details */}
-          <div className="col-span-7 bg-muted md:-skew-x-12 p-8 lg:skew-x-0">
-            <div className="bg-background border-2 border-border rounded-lg p-6 shadow-sm skew-x-12">
+          <motion.div
+            className="col-span-7 bg-muted/20 md:-skew-x-12 p-8 lg:skew-x-0"
+            initial="hidden"
+            whileInView="visible"
+            variants={leftDivAnimation}
+            viewport={{ once: true }}
+          >
+            <div className="bg-background border-2 border-foreground/30 rounded-lg p-6 shadow-[0_20px_50px_rgba(0,_255,_253,_0.15)] skew-x-12">
               <Carousel className="mb-6">
                 <CarouselContent>
                   {selectedProject.images.map((image, index) => (
@@ -209,10 +246,16 @@ export default function Projects() {
                 {selectedProject.description}
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Side - Project List */}
-          <div className="flex flex-col col-span-5">
+          <motion.div
+            className="flex flex-col col-span-5"
+            initial="hidden"
+            whileInView="visible"
+            variants={rightDivAnimation}
+            viewport={{ once: true }}
+          >
             <Tabs
               defaultValue="completed"
               className="w-full"
@@ -227,10 +270,10 @@ export default function Projects() {
             >
               <TabsList className="flex justify-start space-x-4 mb-6">
                 <TabsTrigger value="completed">
-                    <span className="lg:skew-x-12">Completed</span>
+                  <span className="lg:skew-x-12">Completed</span>
                 </TabsTrigger>
                 <TabsTrigger value="in-progress">
-                    <span className="lg:skew-x-12">In Progress</span>
+                  <span className="lg:skew-x-12">In Progress</span>
                 </TabsTrigger>
               </TabsList>
 
@@ -259,7 +302,7 @@ export default function Projects() {
                 </TabsContent>
               ))}
             </Tabs>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

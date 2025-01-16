@@ -1,3 +1,5 @@
+import Image from "next/image"
+import { AspectRatio } from "@radix-ui/react-aspect-ratio"
 import { Card, CardHeader, CardFooter } from "@/components/ui/card"
 import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa"
 
@@ -120,21 +122,23 @@ export default function Home() {
       </p>
       </div>
 
-      <div className="lg:mx-60 md:mx-32 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
+      <div className="mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 lg:max-w-4xl md:max-w-2xl max-w-60">
         {boardMembers.map((member, index) => (
           <Card key={index} className="shadow-md">
-            <CardHeader className="flex flex-col items-center">
-              <img
+            <CardHeader className="items-center text-center">
+              <Image
                 src={member.image}
                 alt={`${member.name}'s picture`}
-                className="w-24 h-24 rounded-full object-cover"
+                width={256}
+                height={256}
+                className="w-28 h-28 rounded-full object-cover"
                 loading="lazy"
               />
               <h2 className="text-lg font-bold mt-4">{member.name}</h2>
-              <p className="text-muted-foreground text-sm text-center">{member.designation}</p>
+              <p className="text-muted-foreground text-sm">{member.designation}</p>
             </CardHeader>
-            {/* <Separator /> */}
-            <CardFooter className="flex justify-center gap-4 my-2">
+
+            <CardFooter className="flex justify-center gap-4  ">
               <a href={`mailto:${member.email}`} target="_blank" rel="noreferrer">
                 <FaEnvelope className="text-xl text-muted-foreground hover:text-primary cursor-pointer" />
               </a>
