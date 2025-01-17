@@ -11,7 +11,7 @@ export default function Footer() {
         <h1 className="font-bold lg:text-lg md:text-lg text-md my-2">Quick Links</h1>
         <div className="flex flex-col">
           <Link
-            href="/#"
+            href="/#hero"
             className="text-muted-foreground hover:text-secondary-foreground"
           >
             <span>Home</span>
@@ -36,6 +36,13 @@ export default function Footer() {
             className="text-muted-foreground hover:text-secondary-foreground"
           >
             <span>Projects</span>
+          </Link>
+
+          <Link
+            href="/#contact"
+            className="text-muted-foreground hover:text-secondary-foreground"
+          >
+            <span>Contact</span>
           </Link>
         </div>
       </div>
