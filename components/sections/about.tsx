@@ -2,7 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import AnimatedCounter from "./animated-counter";
+import AnimatedCounter from "../ui/animated-counter";
+import { headingAnimation, rightDivAnimation } from "../../config/animations";
 
 const stats = [
   { attribute: "Domains", value: 8 },
@@ -11,19 +12,13 @@ const stats = [
   { attribute: "Years", value: 0 },
 ];
 
-const headingAnimation = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 2, ease: "easeOut" } },
-};
-
-const rightDivAnimation = {
-  hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 2, ease: "easeOut" } },
-};
-
 export default function About() {
-  return ( //text-4xl font-bold text-center md:py-12 lg:py-16 py-6
-    <div id="about" className="flex items-start justify-between lg:mx-48 md:mx-24 mx-4 md:gap-20 gap-10 pb-8 lg:pt-16 md:pt-12 pt-6">
+  return (
+    //text-4xl font-bold text-center md:py-12 lg:py-16 py-6
+    <div
+      id="about"
+      className="flex items-start justify-between lg:mx-48 md:mx-24 mx-4 md:gap-20 gap-10 pb-8 lg:pt-16 md:pt-12 pt-6"
+    >
       <motion.div
         className="flex flex-col"
         initial="hidden"
@@ -34,7 +29,10 @@ export default function About() {
         <h1 className="text-4xl font-bold text-center pb-6">About Us</h1>
 
         <p className="text-muted-foreground max-w-md">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere temporibus tenetur quos et quo facilis error aliquid quasi veniam possimus recusandae nisi, maiores sit laudantium rem eius deleniti repudiandae illum.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+          temporibus tenetur quos et quo facilis error aliquid quasi veniam
+          possimus recusandae nisi, maiores sit laudantium rem eius deleniti
+          repudiandae illum.
         </p>
       </motion.div>
 

@@ -1,130 +1,41 @@
-import Image from "next/image"
-import { AspectRatio } from "@radix-ui/react-aspect-ratio"
-import { Card, CardHeader, CardFooter } from "@/components/ui/card"
-import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa"
+"use client";
 
-const boardMembers = [
-  {
-    name: "Vedant Agarwal",
-    designation: "President",
-    image: "/board/president.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Suhani Patel",
-    designation: "Vice President",
-    image: "/board/vice-president.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Samriddhi Mishra",
-    designation: "General Secretary",
-    image: "/board/general-secretary.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Aayushman Jain",
-    designation: "Treasurer",
-    image: "/board/treasurer.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Nishant Dahiya",
-    designation: "Operational Secretary (?)",
-    image: "/board/opsec.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Nihar Madhekar",
-    designation: "Quant & Algo Trading Head",
-    image: "/board/quant-and-algo-trading-head.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Debarun Karmakar",
-    designation: "Finance & Banking Head",
-    image: "/board/finance-and-banking-head.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Suhani Patel",
-    designation: "Blockchain & Web3 Head",
-    image: "/board/blockchain-and-web3-head.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Sujai",
-    designation: "Cybersecurity Head",
-    image: "/board/cybersecurity-head.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Abhuday Singh",
-    designation: "Data Analysis & ML Head",
-    image: "/board/data-analysis-and-ml-head.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Pranav G Nayak",
-    designation: "Fullstack Development Head",
-    image: "/board/fullstack-head.jpg",
-    email: "pranavgnayak@gmail.com",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Ayush Das",
-    designation: "Public Relations Head",
-    image: "/board/pr-head.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-  { 
-    name: "Aditya Sharma",
-    designation: "Social Media & Graphic Design Head",
-    image: "/board/smgd-head.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
-  },
-]
+import Image from "next/image";
+import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+import { Card, CardHeader, CardFooter } from "@/components/ui/card";
+import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { headingAnimation, bodyAnimation } from "../../config/animations";
+import { board } from "@/config/members";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <div className="flex flex-col gap-6 items-center mb-16">
-      <h1 className="text-6xl text-center mt-40 font-extrabold">
-        BOARD
-      </h1>
-      <p className="lg:mx-60 md:mx-32 mx-16 text-muted-foreground max-w-md text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid laborum ipsam veritatis doloribus temporibus quo non neque amet debitis nulla sint perspiciatis, dicta nihil eos. Tenetur nihil nobis sapiente?
-      </p>
-      </div>
+    <main className="overflow-hidden">
+      <motion.div
+        className="flex flex-col gap-6 items-center mb-16"
+        initial="hidden"
+        animate="visible"
+        variants={headingAnimation}
+        viewport={{ once: true }}
+      >
+        <h1 className="text-6xl text-center mt-40 font-extrabold">BOARD</h1>
+        <p className="lg:mx-60 md:mx-32 mx-16 text-muted-foreground max-w-md text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid
+          laborum ipsam veritatis doloribus temporibus quo non neque amet
+          debitis nulla sint perspiciatis, dicta nihil eos. Tenetur nihil nobis
+          sapiente?
+        </p>
+      </motion.div>
 
-      <div className="mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 lg:max-w-4xl md:max-w-2xl max-w-60">
-        {boardMembers.map((member, index) => (
-          <Card key={index} className="shadow-md">
+      <motion.div
+        className="mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 lg:max-w-4xl md:max-w-2xl max-w-60"
+        initial="hidden"
+        animate="visible"
+        variants={bodyAnimation}
+        viewport={{ once: true }}
+      >
+        {board.map((member, index) => (
+          <Card key={index} className="shadow-md w-full h-full">
             <CardHeader className="items-center text-center">
               <Image
                 src={member.image}
@@ -135,11 +46,17 @@ export default function Home() {
                 loading="lazy"
               />
               <h2 className="text-lg font-bold mt-4">{member.name}</h2>
-              <p className="text-muted-foreground text-sm">{member.designation}</p>
+              <p className="text-muted-foreground text-sm">
+                {member.designation}
+              </p>
             </CardHeader>
 
             <CardFooter className="flex justify-center gap-4  ">
-              <a href={`mailto:${member.email}`} target="_blank" rel="noreferrer">
+              <a
+                href={`mailto:${member.email}`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaEnvelope className="text-xl text-muted-foreground hover:text-primary cursor-pointer" />
               </a>
               <a href={member.linkedin} target="_blank" rel="noreferrer">
@@ -151,7 +68,7 @@ export default function Home() {
             </CardFooter>
           </Card>
         ))}
-      </div>
+      </motion.div>
     </main>
-  )
+  );
 }

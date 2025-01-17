@@ -2,12 +2,13 @@
 
 import { useState, ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Input } from "./input";
-import { Textarea } from "./textarea";
-import { Label } from "./label";
-import { Button } from "./button";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
+import { Label } from "../ui/label";
+import { Button } from "../ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Toaster } from "./toaster";
+import { Toaster } from "../ui/toaster";
+import { bodyAnimation, headingAnimation } from "../../config/animations";
 
 interface FormData {
   name: string;
@@ -67,19 +68,26 @@ export default function Contact() {
   };
 
   return (
-    <motion.div
+    <div
       id="contact"
       className="lg:max-w-3xl md:max-w-xl max-w-md md:px-6 lg:px-8 px-4 py-8 mx-auto"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
     >
-      <h1 className="text-4xl font-bold text-center md:py-12 lg:py-16 py-6">
+      <motion.h1
+        className="text-4xl font-bold text-center md:py-12 lg:py-16 py-6"
+        initial="hidden"
+        whileInView="visible"
+        variants={headingAnimation}
+        viewport={{ once: true }}
+      >
         Contact Us
-      </h1>
-      <form
+      </motion.h1>
+      <motion.form
         onSubmit={handleSubmit}
         className="space-y-4 border-border border-2 rounded-xl p-8 md:shadow-[0_20px_50px_rgba(0,_255,_253,_0.15)] mb-14"
+        initial="hidden"
+        whileInView="visible"
+        variants={bodyAnimation}
+        viewport={{ once: true }}
       >
         <div className="space-y-2">
           <Label htmlFor="name" className="block font-medium">
@@ -125,7 +133,7 @@ export default function Contact() {
           {loading ? "Submitting" : "Submit"}
         </Button>
         <Toaster />
-      </form>
-    </motion.div>
+      </motion.form>
+    </div>
   );
 }

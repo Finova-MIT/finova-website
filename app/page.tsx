@@ -1,9 +1,8 @@
-import { Separator } from "@/components/ui/separator"
-import Hero from "@/components/ui/hero"
-import About from "@/components/ui/about"
-import Domains from "@/components/ui/domains"
-import Projects from "@/components/ui/projects"
-import Contact from "@/components/ui/contact"
+import Hero from "@/components/sections/hero";
+import About from "@/components/sections/about";
+import Domains from "@/components/sections/domains";
+import Projects from "@/components/sections/projects";
+import Contact from "@/components/sections/contact";
 
 export default function Home() {
   return (
@@ -11,10 +10,8 @@ export default function Home() {
       <Hero />
       <About />
       <Domains />
-      {/* <Separator /> */}
       <Projects />
       <Contact />
     </main>
-  )
+  );
 }
- 

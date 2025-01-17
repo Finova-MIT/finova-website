@@ -19,6 +19,13 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { FaCalendar } from "react-icons/fa";
+import {
+  bodyAnimation,
+  headingAnimation,
+  leftDivAnimation,
+  rightDivAnimation,
+} from "../../config/animations";
+import { completedProjects, inProgressProjects } from "@/config/projects";
 
 // Define Project type
 type Project = {
@@ -29,50 +36,6 @@ type Project = {
   images: string[];
 };
 
-// Sample project data
-const completedProjects: Project[] = [
-  {
-    id: 1,
-    title: "E-commerce Platform",
-    description: "A fully functional online store",
-    timestamp: "15-05-2024",
-    images: ["/projects/test1.jpg", "/projects/test2.jpg"],
-  },
-  {
-    id: 2,
-    title: "Task Management App",
-    description: "Organize and track your tasks",
-    timestamp: "22-06-2023",
-    images: ["/projects/test1.jpg", "/projects/test2.jpg"],
-  },
-];
-
-const workInProgressProjects: Project[] = [
-  {
-    id: 9,
-    title: "AI Chatbot",
-    description: "Intelligent conversational agent",
-    timestamp: "05-01-2025",
-    images: ["/projects/test1.jpg", "/projects/test2.jpg"],
-  },
-];
-
-const headingAnimation = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 2, ease: "easeOut" } },
-};
-
-const leftDivAnimation = {
-  hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 2, ease: "easeOut" } },
-};
-
-const rightDivAnimation = {
-  hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 2, ease: "easeOut" } },
-};
-
-// ProjectDetails Modal Component
 type ProjectDetailsModalProps = {
   project: Project;
   isOpen: boolean;
@@ -159,7 +122,7 @@ export default function Projects() {
         className="md:hidden space-y-2 max-w-md mx-auto"
         initial="hidden"
         whileInView="visible"
-        variants={headingAnimation}
+        variants={bodyAnimation}
         viewport={{ once: true }}
       >
         <Tabs defaultValue="completed" className="w-full">
@@ -172,7 +135,7 @@ export default function Projects() {
               <div className="space-y-4">
                 {(tab === "completed"
                   ? completedProjects
-                  : workInProgressProjects
+                  : inProgressProjects
                 ).map((project) => (
                   <div
                     key={project.id}
@@ -264,7 +227,7 @@ export default function Projects() {
                 setSelectedProject(
                   value === "completed"
                     ? completedProjects[0]
-                    : workInProgressProjects[0]
+                    : inProgressProjects[0]
                 );
               }}
             >
@@ -281,7 +244,7 @@ export default function Projects() {
                 <TabsContent key={tab} value={tab} className="mt-0 space-y-4">
                   {(tab === "completed"
                     ? completedProjects
-                    : workInProgressProjects
+                    : inProgressProjects
                   ).map((project) => (
                     <Button
                       key={project.id}
