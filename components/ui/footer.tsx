@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="bg-secondary flex lg:gap-16 md:gap-8 gap-4 py-8 lg:px-48 md:px-8 px-4 justify-between mt-8 lg:text-sm md:text-sm text-xs">
+    <footer className="bg-secondary flex lg:gap-16 md:gap-8 gap-4 py-8 lg:px-48 md:px-8 px-4 justify-between mt-8 lg:text-sm md:text-sm text-xs">
       <div className="">
         <h1 className="font-bold lg:text-lg md:text-lg text-md my-2">Quick Links</h1>
         <div className="flex flex-col">
@@ -50,10 +50,10 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="/gallery"
+            href="/events"
             className="text-muted-foreground hover:text-secondary-foreground"
           >
-            <span>Gallery</span>
+            <span>Events</span>
           </Link>
 
           <Link
@@ -92,7 +92,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="https://github.com"
+            href="https://github.com/Finova-MIT"
             className="text-muted-foreground hover:text-secondary-foreground flex gap-2 items-center"
           >
             <FaGithub className="text-lg" />
@@ -121,6 +121,6 @@ export default function Footer() {
                 <b>+91 91041 47937</b> (Suhani Patel - Vice President)
         </p>
       </div>
-    </div>
+    </footer>
   );
 }

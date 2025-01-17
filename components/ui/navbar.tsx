@@ -39,10 +39,10 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/gallery"
+              href="/events"
               className="text-foreground hover:text-muted-foreground px-4 py-2 text-sm font-medium transition-colors tracking-wide"
             >
-              Gallery
+              Events
             </Link>
             <Link
               href="/team"
@@ -79,7 +79,7 @@ export default function Navbar() {
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/Finova-MIT"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-muted-foreground transition-colors"
@@ -95,79 +95,73 @@ export default function Navbar() {
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? (
-              <FiX className="w-6 h-6" />
-            ) : (
-              <FiMenu className="w-6 h-6" />
-            )}
+            <FiMenu className="w-6 h-6" />
           </button>
         </nav>
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div
-          className={`md:hidden fixed inset-y-0 right-0 z-50 w-full bg-black/95 backdrop-blur-md transform transition-transform duration-300 ease-in-out ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+
+      <div
+        className={`md:hidden transition-transform duration-500 ease-in-out fixed h-full w-full inset-y-0 z-50 backdrop-blur-xl bg-background/70 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } flex items-center justify-center`}
+      >
+        <button
+          className="absolute top-6 right-8 text-foreground"
+          onClick={toggleMenu}
+          aria-label="Close menu"
         >
-          <div className="container mx-auto px-4 py-6 flex flex-col h-full max-w-md">
-            <button
-              className="self-end text-white mb-8 transition-opacity duration-300 ease-in-out px-4"
-              onClick={toggleMenu}
-              aria-label="Close menu"
-            >
-              <FiX className="w-6 h-6" />
-            </button>
-            <div className="flex flex-col items-center justify-between h-full mt-20">
-              <div className="flex flex-col items-center space-y-6 text-lg">
-                {["Home", "Gallery", "Team", "Apply"].map((item, index) => (
-                  <Link
-                    key={item}
-                    href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                    className="text-white font-medium transform transition-all duration-300 ease-in-out"
-                    style={{ transitionDelay: `${index * 100}ms` }}
-                    onClick={toggleMenu}
-                  >
-                    {item}
-                  </Link>
-                ))}
-              </div>
-              <div className="flex items-center gap-8 mt-8 mb-16">
-                {[
-                  {
-                    icon: FaInstagram,
-                    href: "https://www.instagram.com/finova.manipal/",
-                    label: "Instagram",
-                  },
-                  {
-                    icon: FaLinkedin,
-                    href: "https://in.linkedin.com/company/finova-mit-manipal",
-                    label: "LinkedIn",
-                  },
-                  {
-                    icon: FaGithub,
-                    href: "https://github.com",
-                    label: "GitHub",
-                  },
-                ].map(({ icon: Icon, href, label }, index) => (
-                  <Link
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white transform transition-all duration-300 ease-in-out"
-                    style={{ transitionDelay: `${(index + 4) * 100}ms` }}
-                  >
-                    <Icon className="w-6 h-6" />
-                    <span className="sr-only">{label}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
+          <FiX className="w-6 h-6" />
+        </button>
+
+        <div className="flex flex-col items-center justify-between gap-32 my-auto text-2xl">
+          <div className="flex flex-col items-center space-y-6">
+            {["Home", "Events", "Team", "Apply"].map((item, index) => (
+              <Link
+                key={item}
+                href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                className=""
+                style={{ transitionDelay: `${index * 100}ms` }}
+                onClick={toggleMenu}
+              >
+                {item}
+              </Link>
+            ))}
+          </div>
+          <div className="flex items-center gap-8">
+            {[
+              {
+                icon: FaInstagram,
+                href: "https://www.instagram.com/finova.manipal/",
+                label: "Instagram",
+              },
+              {
+                icon: FaLinkedin,
+                href: "https://in.linkedin.com/company/finova-mit-manipal",
+                label: "LinkedIn",
+              },
+              {
+                icon: FaGithub,
+                href: "https://github.com/Finova-MIT",
+                label: "GitHub",
+              },
+            ].map(({ icon: Icon, href, label }, index) => (
+              <Link
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+                style={{ transitionDelay: `${(index + 4) * 100}ms` }}
+              >
+                <Icon className="" />
+                <span className="sr-only">{label}</span>
+              </Link>
+            ))}
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }
