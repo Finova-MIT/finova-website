@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Gabarito } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/sections/navbar";
 import Footer from "@/components/sections/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const gabarito = Gabarito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Finova",
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`min-h-screen ${inter.className} flex flex-col min-h-screen dark`}
+        className={`min-h-screen ${gabarito.className} flex flex-col dark`}
       >
         <Navbar />
         <div className="flex-grow overflow-x-hidden">{children}</div>

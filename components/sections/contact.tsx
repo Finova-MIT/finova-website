@@ -83,7 +83,7 @@ export default function Contact() {
       </motion.h1>
       <motion.form
         onSubmit={handleSubmit}
-        className="space-y-4 border-border border-2 rounded-xl p-8 md:shadow-[0_20px_50px_rgba(0,_255,_253,_0.15)] mb-14"
+        className="space-y-4 border-border border-2 rounded-xl p-8 md:shadow-[0px_0px_40px_rgba(0,255,253,0.2)] mb-14"
         initial="hidden"
         whileInView="visible"
         variants={bodyAnimation}

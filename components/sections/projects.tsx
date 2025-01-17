@@ -179,7 +179,7 @@ export default function Projects() {
             variants={leftDivAnimation}
             viewport={{ once: true }}
           >
-            <div className="bg-background border-2 border-foreground/30 rounded-lg p-6 shadow-[0_20px_50px_rgba(0,_255,_253,_0.15)] lg:skew-x-6">
+            <div className="bg-background border-2 border-foreground/30 rounded-lg p-6 drop-shadow-[0px_0px_40px_rgba(0,255,253,0.2)] lg:skew-x-6">
               <Carousel className="mb-4">
                 <CarouselContent>
                   {selectedProject.images.map((image, index) => (
@@ -248,9 +248,9 @@ export default function Projects() {
                   ).map((project) => (
                     <Button
                       key={project.id}
-                      className={`w-full cursor-pointer p-4 rounded-lg transition-all duration-300 transform ${
+                      className={`w-full cursor-pointer p-4 rounded-lg transition-transform duration-300 transform ${
                         selectedProject.id === project.id
-                          ? "shadow-lg -translate-x-2"
+                          ? "shadow-lg -translate-x-2 bg-gradient-to-r from-[#00c886] dark:to-[#09a4c4] text-background"
                           : "bg-background text-foreground hover:bg-muted"
                       }`}
                       onClick={() => setSelectedProject(project)}

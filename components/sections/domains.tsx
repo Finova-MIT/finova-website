@@ -63,7 +63,7 @@ export default function Domains() {
                 key={index}
                 className={`w-full cursor-pointer p-4 rounded-lg transition-transform duration-300 transform ${
                   selectedDomain.name === domain.name
-                    ? "shadow-lg -translate-x-2"
+                    ? "shadow-lg -translate-x-2 bg-gradient-to-r from-[#00c886] dark:to-[#09a4c4] text-background"
                     : "bg-background text-foreground hover:bg-muted"
                 }`}
                 onClick={() => setSelectedDomain(domain)}
@@ -84,7 +84,7 @@ export default function Domains() {
             variants={rightDivAnimation}
             viewport={{ once: true }}
           >
-            <div className="bg-background border-2 border-foreground/30 rounded-lg p-6 shadow-[0_20px_50px_rgba(0,_255,_253,_0.15)] lg:skew-x-6">
+            <div className="bg-background border-2 border-foreground/30 rounded-lg p-6 drop-shadow-[0px_0px_40px_rgba(0,255,253,0.2)] lg:skew-x-6">
               <AspectRatio ratio={2 / 1} className="mb-4">
                 <img
                   src={selectedDomain.image}

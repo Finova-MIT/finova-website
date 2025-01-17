@@ -1,3 +1,5 @@
+import { color, m } from "framer-motion";
+
 export const bodyAnimation = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
@@ -22,3 +24,8 @@ export const fadeInAnimation = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 1.5, ease: "easeOut" } },
 };
+
+export const gradientSweepAnimation = {
+  hidden: { color: "--foreground" },
+  visible: { color: "", transition: { duration: 2, ease: "easeOut" } },
+}
