@@ -63,7 +63,7 @@ export default function Domains() {
                 key={index}
                 className={`w-full cursor-pointer p-4 rounded-lg transition-transform duration-300 transform ${
                   selectedDomain.name === domain.name
-                    ? "shadow-lg -translate-x-2 bg-gradient-to-r from-[#00c886] dark:to-[#09a4c4] text-background"
+                    ? "shadow-lg -translate-x-2 bg-gradient-to-r from-[#00c886] to-[#09a4c4] text-background"
                     : "bg-background text-foreground hover:bg-muted"
                 }`}
                 onClick={() => setSelectedDomain(domain)}

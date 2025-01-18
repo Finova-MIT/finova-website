@@ -25,7 +25,17 @@ export const fadeInAnimation = {
   visible: { opacity: 1, transition: { duration: 1.5, ease: "easeOut" } },
 };
 
-export const gradientSweepAnimation = {
-  hidden: { color: "--foreground" },
-  visible: { color: "", transition: { duration: 2, ease: "easeOut" } },
+export const leftHeroAnimation = {
+  hidden: { opacity: 0, x: -25 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.75, ease: "easeOut" } },
+}
+
+export const rightHeroAnimation = {
+  hidden: { opacity: 0, x: 25 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.75, ease: "easeOut" } },
+}
+
+export const bottomHeroAnimation = {
+  hidden: { opacity: 0, y: 25 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1.25, ease: "easeOut" } },
 }
