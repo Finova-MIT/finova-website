@@ -2,9 +2,12 @@
 import React from "react";
 import { Boxes } from "../ui/background-boxes";
 import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "../ui/hero-highlight";
 import { cn } from "@/lib/utils";
-import { leftHeroAnimation, rightHeroAnimation, bottomHeroAnimation } from "@/config/animations";
+import {
+  leftHeroAnimation,
+  rightHeroAnimation,
+  bottomHeroAnimation,
+} from "@/config/animations";
 
 export default function Hero() {
   return (
@@ -36,8 +39,9 @@ export default function Hero() {
             variants={rightHeroAnimation}
             style={{
               background:
-                "linear-gradient(to right, #30d5c8 0, #fff 15%, #23e8d1 20%)",
+                "linear-gradient(to right, #30d5c8 0, #dfdfdf 10%, #23e8d1 20%)",
               backgroundPosition: "0",
+              backgroundSize: "200% 100%",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               animation: "shine 1.5s infinite linear",
@@ -51,18 +55,20 @@ export default function Hero() {
           <style jsx>{`
             @keyframes shine {
               0% {
-                background-position: 0;
+                background-position: 200% 0;
               }
               100% {
-                background-position: 10rem;
+                background-position: 0% 0;
               }
             }
           `}</style>
         </span>
-        <motion.p className="lg:text-2xl text-xl text-center mt-2 text-muted-foreground relative z-20"
-        initial="hidden"
-        animate="visible"
-        variants={bottomHeroAnimation}>
+        <motion.p
+          className="lg:text-2xl text-xl text-center mt-2 text-muted-foreground relative z-20"
+          initial="hidden"
+          animate="visible"
+          variants={bottomHeroAnimation}
+        >
           Club catchphrase / slogan goes here
         </motion.p>
       </h1>
