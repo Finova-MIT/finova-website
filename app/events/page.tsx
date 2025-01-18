@@ -19,15 +19,14 @@ export default function Home() {
       >
         <h1 className="text-6xl text-center mt-40 font-extrabold">EVENTS</h1>
         <p className="lg:mx-60 md:mx-32 mx-16 text-muted-foreground max-w-md text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid
-          laborum ipsam veritatis doloribus temporibus quo non neque amet
-          debitis nulla sint perspiciatis, dicta nihil eos. Tenetur nihil nobis
-          sapiente?
+          We host a dynamic range of events, workshops, and talks designed to
+          inspire and empower students. Our events aim to foster innovation and
+          skill development in finance, technology, and beyond.
         </p>
       </motion.div>
 
       <div className="text-center p-16 bg-muted/30 text-muted-foreground">
-        Nothing to see here, yet!
+        Stay tuned for opportunities to learn, connect, and grow with us!
       </div>
     </main>
   );

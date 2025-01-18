@@ -17,12 +17,11 @@ export default function Hero() {
     >
       <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
-      {/* <HeroHighlight> */}
       <Boxes />
       <h1 className="px-4 font-semibold text-foreground dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto ">
         <span
           className={cn(
-            "lg:text-5xl sm:flex md:flex-row flex-col text-4xl text-foreground relative z-20 flex items-center gap-2"
+            "md:text-5xl md:flex-row md:items-end flex-col text-4xl text-foreground relative z-20 flex justify-center gap-2"
           )}
         >
           <motion.span
@@ -64,15 +63,14 @@ export default function Hero() {
           `}</style>
         </span>
         <motion.p
-          className="lg:text-2xl text-xl text-center mt-2 text-muted-foreground relative z-20"
+          className="md:text-2xl text-xl text-center mt-2 text-muted-foreground relative z-20 md:mx-32 mx-14 md:mt-0 mt-6"
           initial="hidden"
           animate="visible"
           variants={bottomHeroAnimation}
         >
-          Club catchphrase / slogan goes here
+          Where Finance meets Technology & Innovation
         </motion.p>
       </h1>
-      {/* </HeroHighlight> */}
     </div>
   );
 }

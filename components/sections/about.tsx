@@ -14,7 +14,6 @@ const stats = [
 
 export default function About() {
   return (
-    //text-4xl font-bold text-center md:py-12 lg:py-16 py-6
     <div
       id="about"
       className="flex items-start justify-between lg:mx-48 md:mx-24 mx-4 md:gap-20 gap-10 pb-8 lg:pt-16 md:pt-12 pt-6"
@@ -29,10 +28,10 @@ export default function About() {
         <h1 className="text-4xl font-bold text-center pb-6">About Us</h1>
 
         <p className="text-muted-foreground max-w-md">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-          temporibus tenetur quos et quo facilis error aliquid quasi veniam
-          possimus recusandae nisi, maiores sit laudantium rem eius deleniti
-          repudiandae illum.
+          Established in 2024, we are a student-driven community passionate
+          about merging finance and technology to drive innovation and impact.
+          By merging the fields of finance and technology, we're not just
+          building skills - we're building the future.
         </p>
       </motion.div>
 

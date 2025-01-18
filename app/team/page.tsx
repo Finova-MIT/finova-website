@@ -20,10 +20,10 @@ export default function Home() {
       >
         <h1 className="text-6xl text-center mt-40 font-extrabold">BOARD</h1>
         <p className="lg:mx-60 md:mx-32 mx-16 text-muted-foreground max-w-md text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid
-          laborum ipsam veritatis doloribus temporibus quo non neque amet
-          debitis nulla sint perspiciatis, dicta nihil eos. Tenetur nihil nobis
-          sapiente?
+          Our board consists of visionary leaders dedicated to fostering
+          innovation in the domains of finance and technology. Each member
+          brings unique qualities to drive our mission forward. Together, they
+          empower the next generation of changemakers.
         </p>
       </motion.div>
 
