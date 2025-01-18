@@ -26,6 +26,7 @@ import {
   rightDivAnimation,
 } from "../../config/animations";
 import { completedProjects, inProgressProjects } from "@/config/projects";
+import Image from "next/image";
 
 // Define Project type
 type Project = {
@@ -67,7 +68,9 @@ function ProjectDetailsModal({
               {project.images.map((image, index) => (
                 <CarouselItem key={index}>
                   <div className="aspect-[2/1]">
-                    <img
+                    <Image
+                      width={1920}
+                      height={1080}
                       src={image}
                       alt={`${project.title} - Image ${index + 1}`}
                       className="rounded-lg object-cover w-full h-full"
@@ -185,7 +188,9 @@ export default function Projects() {
                   {selectedProject.images.map((image, index) => (
                     <CarouselItem key={index}>
                       <div className="aspect-[2/1]">
-                        <img
+                        <Image
+                          width={1920}
+                          height={1080}
                           src={image}
                           alt={`${selectedProject.title} - Image ${index + 1}`}
                           className="rounded-lg object-cover w-full h-full"

@@ -10,6 +10,7 @@ import {
   rightDivAnimation,
 } from "../../config/animations";
 import { domains } from "@/config/domains";
+import Image from "next/image";
 
 export default function Domains() {
   const [selectedDomain, setSelectedDomain] = useState(domains[0]);
@@ -86,7 +87,9 @@ export default function Domains() {
           >
             <div className="bg-background border-2 border-foreground/30 rounded-lg p-6 drop-shadow-[0px_0px_40px_rgba(0,255,253,0.2)] lg:skew-x-6">
               <AspectRatio ratio={2 / 1} className="mb-4">
-                <img
+                <Image
+                  width={1920}
+                  height={1080}
                   src={selectedDomain.image}
                   alt={selectedDomain.name}
                   className="rounded-lg object-cover w-full h-full"

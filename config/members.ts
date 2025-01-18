@@ -2,7 +2,7 @@ export const board = [
   {
     name: "Vedant Agarwal",
     designation: "President",
-    image: "/board/president.jpg",
+    image: "/people/vedant-agarwal.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -10,7 +10,7 @@ export const board = [
   {
     name: "Suhani Patel",
     designation: "Vice President",
-    image: "/board/vice-president.jpg",
+    image: "/people/suhani-patel.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -18,7 +18,7 @@ export const board = [
   {
     name: "Samriddhi Mishra",
     designation: "General Secretary",
-    image: "/board/general-secretary.jpg",
+    image: "/people/samriddhi-mishra.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -26,7 +26,7 @@ export const board = [
   {
     name: "Aayushman Jain",
     designation: "Treasurer",
-    image: "/board/treasurer.jpg",
+    image: "/people/aayushman-jain.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -34,7 +34,7 @@ export const board = [
   {
     name: "Nishant Dahiya",
     designation: "Operational Secretary (?)",
-    image: "/board/opsec.jpg",
+    image: "/people/nishant-dahiya.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -42,7 +42,7 @@ export const board = [
   {
     name: "Nihar Madhekar",
     designation: "Quant & Algo Trading Head",
-    image: "/board/quant-and-algo-trading-head.jpg",
+    image: "/people/nihar-madhekar.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -50,7 +50,7 @@ export const board = [
   {
     name: "Debarun Karmakar",
     designation: "Finance & Banking Head",
-    image: "/board/finance-and-banking-head.jpg",
+    image: "/people/debarun-karmakar.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -58,7 +58,7 @@ export const board = [
   {
     name: "Suhani Patel",
     designation: "Blockchain & Web3 Head",
-    image: "/board/blockchain-and-web3-head.jpg",
+    image: "/people/suhani-patel.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -66,7 +66,7 @@ export const board = [
   {
     name: "Sujai",
     designation: "Cybersecurity Head",
-    image: "/board/cybersecurity-head.jpg",
+    image: "/people/sujai.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -74,7 +74,7 @@ export const board = [
   {
     name: "Abhuday Singh",
     designation: "Data Analysis & ML Head",
-    image: "/board/data-analysis-and-ml-head.jpg",
+    image: "/people/abhuday-singh.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -82,7 +82,7 @@ export const board = [
   {
     name: "Pranav G Nayak",
     designation: "Fullstack Development Head",
-    image: "/board/fullstack-head.jpg",
+    image: "/people/pranav-g-nayak.jpg",
     email: "pranavgnayak@gmail.com",
     linkedin: "",
     instagram: "",
@@ -90,7 +90,7 @@ export const board = [
   {
     name: "Ayush Das",
     designation: "Public Relations Head",
-    image: "/board/pr-head.jpg",
+    image: "/people/ayush-das.jpg",
     email: "",
     linkedin: "",
     instagram: "",
@@ -98,7 +98,7 @@ export const board = [
   {
     name: "Aditya Sharma",
     designation: "Social Media & Graphic Design Head",
-    image: "/board/smgd-head.jpg",
+    image: "/people/aditya-sharma.jpg",
     email: "",
     linkedin: "",
     instagram: "",
