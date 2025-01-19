@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { headingAnimation, bodyAnimation } from "@/config/animations";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -25,9 +26,9 @@ export default function NotFound() {
         >
           The page you were looking for was not found. Please check the URL or
           go back to the{" "}
-          <a href="/" className="text-chart-1 underline">
+          <Link href="/" className="text-chart-1 underline">
             homepage
-          </a>
+          </Link>
           .
         </motion.p>
       </div>

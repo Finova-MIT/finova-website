@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import { Card, CardHeader, CardFooter } from "@/components/ui/card";
-import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { headingAnimation, bodyAnimation } from "../../config/animations";
 import { board } from "@/config/members";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -51,20 +52,17 @@ export default function Home() {
               </p>
             </CardHeader>
 
-            <CardFooter className="flex justify-center gap-4  ">
-              <a
+            <CardFooter className="flex justify-center gap-4">
+              <Link
                 href={`mailto:${member.email}`}
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaEnvelope className="text-xl text-muted-foreground hover:text-primary cursor-pointer" />
-              </a>
-              <a href={member.linkedin} target="_blank" rel="noreferrer">
-                <FaLinkedin className="text-xl text-muted-foreground hover:text-primary cursor-pointer" />
-              </a>
-              <a href={member.instagram} target="_blank" rel="noreferrer">
-                <FaInstagram className="text-xl text-muted-foreground hover:text-primary cursor-pointer" />
-              </a>
+                <FaEnvelope className="text-xl text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
+              </Link>
+              <Link href={member.linkedin} target="_blank" rel="noreferrer">
+                <FaLinkedin className="text-xl text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
+              </Link>
             </CardFooter>
           </Card>
         ))}

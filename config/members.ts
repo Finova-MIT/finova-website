@@ -84,7 +84,7 @@ export const board = [
     designation: "Fullstack Development Head",
     image: "/people/pranav-g-nayak.jpg",
     email: "pranavgnayak@gmail.com",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/pranav-g-nayak-a68101146/",
     instagram: "",
   },
   {
