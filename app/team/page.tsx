@@ -41,8 +41,8 @@ export default function Home() {
               <Image
                 src={member.image}
                 alt={`${member.name}'s picture`}
-                width={128}
-                height={128}
+                width={256}
+                height={256}
                 className="w-28 h-28 rounded-full object-cover"
                 loading="lazy"
               />
