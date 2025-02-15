@@ -43,24 +43,29 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
         <Script
+          id="structured-data"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Finova",
-              "url": WEBSITE_URL,
-              "logo": `${WEBSITE_URL}/logo.png`,
-              "sameAs": [
+              name: "Finova",
+              url: WEBSITE_URL,
+              logo: `${WEBSITE_URL}/logo.png`,
+              sameAs: [
                 "https://www.instagram.com/finova.manipal/",
                 "https://www.linkedin.com/company/finova-mit-manipal/",
-                "https://github.com/Finova-MIT"
-              ]
+                "https://github.com/Finova-MIT",
+              ],
             }),
           }}
         />
