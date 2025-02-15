@@ -5,15 +5,13 @@ export const board = [
     image: "/people/vedant-agarwal.jpg",
     email: "vedant.agarwal312@gmail.com",
     linkedin: "https://www.linkedin.com/in/vedant-agarwal312/",
-    instagram: "",
   },
   {
     name: "Suhani Patel",
     designation: "Vice President",
     image: "/people/suhani-patel.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
+    email: "suhanip1903@gmail.com",
+    linkedin: "https://www.linkedin.com/in/suhani-patel-a6957a250/",
   },
   {
     name: "Samriddhi Mishra",
@@ -21,7 +19,6 @@ export const board = [
     image: "/people/samriddhi-mishra.jpg",
     email: "mishrasamriddhi@gmail.com",
     linkedin: "https://www.linkedin.com/in/samriddhi-mishra-a31166284/",
-    instagram: "",
   },
   {
     name: "Aayushman Jain",
@@ -29,7 +26,6 @@ export const board = [
     image: "/people/aayushman-jain.jpg",
     email: "aayush17sty@gmail.com",
     linkedin: "https://www.linkedin.com/in/aayushman-jain-032940267/",
-    instagram: "",
   },
   {
     name: "Nishant Dahiya",
@@ -37,15 +33,13 @@ export const board = [
     image: "/people/nishant-dahiya.jpg",
     email: "dahiyanishant2405@gmail.com",
     linkedin: "https://www.linkedin.com/in/nishant-dahiya-3a071424b/",
-    instagram: "",
   },
   {
     name: "Nihar Madhekar",
     designation: "Quant & Algo Trading Head",
     image: "/people/nihar-madhekar.jpg",
-    email: "",
-    linkedin: "",
-    instagram: "",
+    email: "niharmadhekar@gmail.com",
+    linkedin: "https://www.linkedin.com/in/nihar-madhekar-6a8aa730b/",
   },
   {
     name: "Debarun Karmakar",
@@ -53,7 +47,6 @@ export const board = [
     image: "/people/debarun-karmakar.jpg",
     email: "debarun.karmakar.dsk@gmail.com",
     linkedin: "https://www.linkedin.com/in/debarunkarmakar/",
-    instagram: "",
   },
   {
     name: "Mohammed Hadi",
@@ -61,7 +54,6 @@ export const board = [
     image: "/people/mohammed-hadi.jpg",
     email: "mhdhadiabdullah@gmail.com",
     linkedin: "https://www.linkedin.com/in/mohammed-hadi-ab1820251/",
-    instagram: "",
   },
   {
     name: "Sujai Murali",
@@ -69,7 +61,6 @@ export const board = [
     image: "/people/sujai.jpg",
     email: "velociper5@gmail.com",
     linkedin: "https://www.linkedin.com/in/sujai-murali-28a88331a/",
-    instagram: "",
   },
   {
     name: "Abhuday Singh",
@@ -77,7 +68,6 @@ export const board = [
     image: "/people/abhuday-singh.jpg",
     email: "abhuday2656@gmail.com",
     linkedin: "https://www.linkedin.com/in/kunwar-abhuday-singh-280836284/",
-    instagram: "",
   },
   {
     name: "Pranav G Nayak",
@@ -85,7 +75,6 @@ export const board = [
     image: "/people/pranav-g-nayak.jpg",
     email: "pranavgnayak@gmail.com",
     linkedin: "https://www.linkedin.com/in/pranav-g-nayak-a68101146/",
-    instagram: "",
   },
   {
     name: "Ayush Das",
@@ -93,7 +82,6 @@ export const board = [
     image: "/people/ayush-das.jpg",
     email: "ayush.das0213@gmail.com",
     linkedin: "https://www.linkedin.com/in/d-ayush/",
-    instagram: "",
   },
   {
     name: "Aditya Sharma",
@@ -101,6 +89,5 @@ export const board = [
     image: "/people/aditya-sharma.jpg",
     email: "adityasharma.variable@gmail.com",
     linkedin: "https://www.linkedin.com/in/aditya-sharma-4aa716336/",
-    instagram: "",
   },
 ];
