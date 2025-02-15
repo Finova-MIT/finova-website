@@ -49,7 +49,7 @@ export default function About() {
           >
             <h1 className="lg:text-4xl md:text-2xl text-xl font-black">
               <AnimatedCounter from={0} to={stat.value} />
-              {stat.more && "+"}
+              {stat.more && <span className="absolute text-muted-foreground font-semibold">+</span>}
             </h1>
             <p className="font-bold text-muted-foreground lg:text-md md:text-sm text-xs">
               {stat.attribute.toUpperCase()}
