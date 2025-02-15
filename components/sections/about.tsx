@@ -7,9 +7,9 @@ import { headingAnimation, rightDivAnimation } from "../../config/animations";
 
 const stats = [
   { attribute: "Domains", value: 8 },
-  { attribute: "Members", value: 89 },
-  { attribute: "Projects", value: 1 },
-  { attribute: "Years", value: 0 },
+  { attribute: "Members", value: 300, more: true },
+  { attribute: "Projects", value: 3, more: true },
+  { attribute: "Years", value: 1 },
 ];
 
 export default function About() {
@@ -49,6 +49,7 @@ export default function About() {
           >
             <h1 className="lg:text-4xl md:text-2xl text-xl font-black">
               <AnimatedCounter from={0} to={stat.value} />
+              {stat.more && "+"}
             </h1>
             <p className="font-bold text-muted-foreground lg:text-md md:text-sm text-xs">
               {stat.attribute.toUpperCase()}
