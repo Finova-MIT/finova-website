@@ -27,10 +27,12 @@ import {
 } from "../../config/animations";
 import { completedProjects, inProgressProjects } from "@/config/projects";
 import Image from "next/image";
+import Link from "next/link";
 
 // Define Project type
 type Project = {
   id: number;
+  url: string;
   title: string;
   description: string;
   timestamp: string;
@@ -52,7 +54,11 @@ function ProjectDetailsModal({
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-80 mx-auto my-auto">
         <DialogHeader>
-          <DialogTitle>{project.title}</DialogTitle>
+          <DialogTitle>
+            <Link href={project.url} target="_blank" rel="noreferrer">
+              {project.title}
+            </Link>
+          </DialogTitle>
           <DialogDescription className="items-center flex flex-col">
             <span className="mt-4 flex gap-2 items-center text-muted-foreground">
               <FaCalendar className="text-md" />
@@ -203,8 +209,14 @@ export default function Projects() {
                 <CarouselPrevious />
                 <CarouselNext />
               </Carousel>
-              <h2 className="text-2xl font-bold mb-2">
-                {selectedProject.title}
+              <h2 className="text-2xl font-bold mb-2 hover:text-chart-1 transition-colors duration-300">
+                <Link
+                  href={selectedProject.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {selectedProject.title}
+                </Link>
               </h2>
               <p className="text-sm text-muted-foreground mb-4 flex gap-2 items-center">
                 <FaCalendar className="text-md" />
