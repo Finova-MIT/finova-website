@@ -63,7 +63,7 @@ export default function Hero() {
           `}</style>
         </span>
         <motion.p
-          className="md:text-2xl text-xl text-center mt-2 text-muted-foreground relative z-20 md:mx-32 mx-14 md:mt-0 mt-6"
+          className="md:text-2xl text-xl text-center text-muted-foreground relative z-20 md:mx-32 mx-14 md:mt-0 mt-6"
           initial="hidden"
           animate="visible"
           variants={bottomHeroAnimation}
