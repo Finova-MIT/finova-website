@@ -40,7 +40,7 @@ export default function Home() {
       <main className="">
         <div className="flex flex-col gap-6 items-center mb-16">
           <motion.h1
-            className="text-6xl text-center mt-40 font-extrabold"
+            className="md:text-6xl text-5xl text-center mt-40 font-extrabold"
             initial="hidden"
             animate="visible"
             variants={headingAnimation}

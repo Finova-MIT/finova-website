@@ -19,7 +19,7 @@ export default function Home() {
         variants={headingAnimation}
         viewport={{ once: true }}
       >
-        <h1 className="text-6xl text-center mt-40 font-extrabold">BOARD</h1>
+        <h1 className="md:text-6xl text-5xl text-center mt-40 font-extrabold">BOARD</h1>
         <p className="lg:mx-60 md:mx-32 mx-16 text-muted-foreground max-w-md text-center">
           Our board consists of visionary leaders dedicated to fostering
           innovation in the domains of finance and technology. Each member

@@ -17,7 +17,7 @@ export default function Home() {
         variants={headingAnimation}
         viewport={{ once: true }}
       >
-        <h1 className="text-6xl text-center mt-40 font-extrabold">EVENTS</h1>
+        <h1 className="md:text-6xl text-5xl text-center mt-40 font-extrabold">EVENTS</h1>
         <p className="lg:mx-60 md:mx-32 mx-16 text-muted-foreground max-w-md text-center">
           We host a dynamic range of events, workshops, and talks designed to
           inspire and empower students. Our events aim to foster innovation and
