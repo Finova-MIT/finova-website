@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: metadataConfig.title,
     images: [
       {
-        url: metadataConfig.iconUrl,
+        url: metadataConfig.websiteUrl + metadataConfig.iconUrl,
         width: 678,
         height: 750,
         alt: `${metadataConfig.shortName} Logo`,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: metadataConfig.title,
     description: metadataConfig.description,
-    images: [metadataConfig.iconUrl],
+    images: [metadataConfig.websiteUrl + metadataConfig.iconUrl],
   },
   alternates: {
     canonical: metadataConfig.websiteUrl,
