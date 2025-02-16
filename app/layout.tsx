@@ -4,42 +4,41 @@ import { Gabarito } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/sections/navbar";
 import Footer from "@/components/sections/footer";
+import { metadata as metadataConfig } from "@/config/metadata";
+import { socials } from "@/config/socials";
 
 const gabarito = Gabarito({ subsets: ["latin"] });
 
-const WEBSITE_URL = "https://finovamanipal.org";
-
 export const metadata: Metadata = {
-  title: "Finova - Manipal",
-  description:
-    "Official FinTech club of Manipal Institute of Technology (MIT), Manipal. We aim to bridge the gap between finance and technology.",
+  title: metadataConfig.title,
+  description: metadataConfig.description,
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
+    icon: metadataConfig.iconUrl,
+    shortcut: metadataConfig.iconUrl,
   },
   openGraph: {
-    title: "Finova - Manipal",
-    description: "Explore financial strategies and tools with Finova.",
-    url: WEBSITE_URL,
-    siteName: "Finova",
+    title: metadataConfig.title,
+    description: metadataConfig.description,
+    url: metadataConfig.websiteUrl,
+    siteName: metadataConfig.title,
     images: [
       {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Finova - Manipal",
+        url: metadataConfig.iconUrl,
+        width: 678,
+        height: 750,
+        alt: `${metadataConfig.shortName} Logo`,
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Finova - Manipal",
-    description: "Explore financial strategies and tools with Finova.",
-    images: ["/logo.png"],
+    title: metadataConfig.title,
+    description: metadataConfig.description,
+    images: [metadataConfig.iconUrl],
   },
   alternates: {
-    canonical: WEBSITE_URL,
+    canonical: metadataConfig.websiteUrl,
   },
 };
 
@@ -58,17 +57,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Finova",
-              url: WEBSITE_URL,
-              logo: `${WEBSITE_URL}/logo.png`,
-              sameAs: [
-                "https://www.instagram.com/finova.manipal/",
-                "https://www.linkedin.com/company/finova-mit-manipal/",
-                "https://github.com/Finova-MIT",
-              ],
+              name: metadataConfig.shortName,
+              url: metadataConfig.websiteUrl,
+              logo: metadataConfig.websiteUrl + metadataConfig.iconUrl,
+              sameAs: socials.map((social) => social.name),
             }),
           }}
         />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`min-h-screen ${gabarito.className} flex flex-col dark`}>
         <Navbar />
