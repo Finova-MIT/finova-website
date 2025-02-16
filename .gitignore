@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+next-sitemap*
 
 # debug
 npm-debug.log*
