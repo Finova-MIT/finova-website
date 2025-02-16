@@ -1,0 +1,16 @@
+{
+  "name": "Finova",
+  "short_name": "Finova",
+  "description": "Official FinTech club of Manipal Institute of Technology (MIT), Manipal. We aim to bridge the gap between finance and technology.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "678x750",
+      "type": "image/png"
+    }
+  ]
+}
