@@ -10,11 +10,12 @@ import {
 import { useEffect, useRef } from "react";
 
 type CounterProps = {
+  className?: string;
   from: number;
   to: number;
 };
 
-export default function AnimatedCounter({ from, to }: CounterProps) {
+export default function AnimatedCounter({ className, from, to }: CounterProps) {
   const count = useMotionValue(from);
   const rounded = useTransform(count, (latest) => {
     return Math.round(latest);
@@ -28,5 +29,5 @@ export default function AnimatedCounter({ from, to }: CounterProps) {
     }
   }, [count, inView, to]);
 
-  return <motion.span ref={ref}>{rounded}</motion.span>;
+  return <motion.span className={className} ref={ref}>{rounded}</motion.span>;
 }
