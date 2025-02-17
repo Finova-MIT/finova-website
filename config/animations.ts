@@ -1,5 +1,3 @@
-import { color, m } from "framer-motion";
-
 export const bodyAnimation = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
@@ -8,6 +6,11 @@ export const bodyAnimation = {
 export const headingAnimation = {
   hidden: { opacity: 0, y: 25 },
   visible: { opacity: 1, y: 0, transition: { duration: 1.5, ease: "easeOut" } },
+};
+
+export const subheadingAnimation = {
+  hidden: { opacity: 0, y: 35 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1.35, ease: "easeOut" } },
 };
 
 export const leftDivAnimation = {
