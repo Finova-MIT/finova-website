@@ -42,6 +42,7 @@ export default function Hero() {
               backgroundPosition: "0",
               backgroundSize: "200% 100%",
               WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
               animation: "shine 1.5s infinite linear",
             }}
           >
