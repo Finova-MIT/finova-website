@@ -45,7 +45,7 @@ export default function About() {
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="flex flex-col items-center border-border border-2 rounded-lg hover:bg-border transition-colors ease-out duration-300 lg:px-16 md:px-12 px-8 py-4"
+            className="backdrop-blur-md flex flex-col items-center border-border border-2 rounded-lg hover:bg-border transition-colors ease-out duration-300 lg:px-16 md:px-12 px-8 py-4"
           >
             <h1 className="lg:text-4xl md:text-2xl text-xl font-black">
               <AnimatedCounter from={0} to={stat.value} />
