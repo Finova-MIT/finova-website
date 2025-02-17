@@ -32,7 +32,7 @@ export default function Hero() {
             Introducing
           </motion.span>
           <motion.span
-            className="md:text-5xl text-7xl font-black relative overflow-hidden inline-block"
+            className="md:text-5xl text-7xl font-black relative overflow-hidden inline-block text-transparent whitespace-nowrap fill-mode-forwards"
             initial="hidden"
             animate="visible"
             variants={rightHeroAnimation}
@@ -42,10 +42,7 @@ export default function Hero() {
               backgroundPosition: "0",
               backgroundSize: "200% 100%",
               WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
               animation: "shine 1.5s infinite linear",
-              animationFillMode: "forwards",
-              whiteSpace: "nowrap",
             }}
           >
             FINOVA
