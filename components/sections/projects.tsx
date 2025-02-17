@@ -116,24 +116,29 @@ export default function Projects() {
       id="projects"
       className="lg:max-w-6xl md:max-w-4xl max-w-lg md:px-6 lg:px-8 px-4 py-8 mx-auto"
     >
-      <motion.h1
+      {/* <motion.h1
         className="text-4xl font-bold text-center md:py-12 lg:py-16 py-6"
         initial="hidden"
         whileInView="visible"
         variants={headingAnimation}
         viewport={{ once: true }}
-      >
+      > */}
+
+      <h1 className="text-4xl font-bold text-center md:py-12 lg:py-16 py-6">
         Our Projects
-      </motion.h1>
+      {/* </motion.h1> */}
+      </h1>
 
       {/* Mobile View */}
-      <motion.div
+      {/* <motion.div
         className="md:hidden space-y-2 max-w-md mx-auto"
         initial="hidden"
         whileInView="visible"
         variants={bodyAnimation}
         viewport={{ once: true }}
-      >
+      > */}
+
+      <div className="md:hidden space-y-2 max-w-md mx-auto">
         <Tabs defaultValue="completed" className="w-full">
           <TabsList className="flex space-x-4 justify-center mb-4">
             <TabsTrigger value="completed">Completed</TabsTrigger>
@@ -175,19 +180,21 @@ export default function Projects() {
             onClose={() => setIsModalOpen(false)}
           />
         )}
-      </motion.div>
+      {/* </motion.div> */}
+      </div>
 
       {/* Desktop View */}
       <div className="md:block lg:block hidden lg:-skew-x-6">
         <div className="z-10 grid grid-cols-12 gap-12">
           {/* Left Side - Project Details */}
-          <motion.div
+          {/* <motion.div
             className="col-span-7 bg-muted/20 p-8"
             initial="hidden"
             whileInView="visible"
             variants={leftDivAnimation}
             viewport={{ once: true }}
-          >
+          > */}
+          <div className="col-span-7 bg-muted/20 p-8">
             <div className="bg-background border-2 border-foreground/30 rounded-lg p-6 drop-shadow-[0px_0px_40px_rgba(0,255,253,0.2)] lg:skew-x-6">
               <Carousel className="mb-4">
                 <CarouselContent>
@@ -226,16 +233,18 @@ export default function Projects() {
                 {selectedProject.description}
               </p>
             </div>
-          </motion.div>
+          {/* </motion.div> */}
+          </div>
 
           {/* Right Side - Project List */}
-          <motion.div
+          {/* <motion.div
             className="flex flex-col col-span-5"
             initial="hidden"
             whileInView="visible"
             variants={rightDivAnimation}
             viewport={{ once: true }}
-          >
+          > */}
+          <div className="flex flex-col col-span-5">
             <Tabs
               defaultValue="completed"
               className="w-full"
@@ -282,7 +291,8 @@ export default function Projects() {
                 </TabsContent>
               ))}
             </Tabs>
-          </motion.div>
+          {/* </motion.div> */}
+          </div>
         </div>
       </div>
     </div>

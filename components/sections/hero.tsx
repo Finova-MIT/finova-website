@@ -24,30 +24,36 @@ export default function Hero() {
             "md:text-5xl md:flex-row md:items-end flex-col text-4xl text-foreground relative z-20 flex justify-center gap-2"
           )}
         >
-          <motion.span
+          {/* <motion.span
             initial="hidden"
             animate="visible"
             variants={leftHeroAnimation}
-          >
+          > */}
+          <span>
             Introducing
-          </motion.span>
-          <motion.span
+            {/* </motion.span> */}
+          </span>
+          {/* <motion.span
             className="md:text-5xl text-7xl font-black relative overflow-hidden inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#30d5c8] to-[#23e8d1] via-[#dfdfdf] to-20% via-10% whitespace-nowrap fill-mode-forwards animate-[shine_1.5s_infinite_linear] bg-[200%_auto] bg-[0]"
             initial="hidden"
             animate="visible"
             variants={rightHeroAnimation}
-          >
+          > */}
+          <span className="md:text-5xl text-7xl font-black relative overflow-hidden inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#30d5c8] to-[#23e8d1] via-[#dfdfdf] to-20% via-10% whitespace-nowrap fill-mode-forwards animate-[shine_1.5s_infinite_linear] bg-[200%_auto] bg-[0]">
             FINOVA
-          </motion.span>
+            {/* </motion.span> */}
+          </span>
         </span>
-        <motion.p
+        {/* <motion.p
           className="md:text-2xl text-xl text-center text-muted-foreground relative z-20 md:mx-32 mx-14 md:mt-0 mt-6"
           initial="hidden"
           animate="visible"
           variants={bottomHeroAnimation}
-        >
+        > */}
+        <p className="md:text-2xl text-xl text-center text-muted-foreground relative z-20 md:mx-32 mx-14 md:mt-0 mt-6">
           Where Finance meets Technology & Innovation
-        </motion.p>
+          {/* </motion.p> */}
+        </p>
       </h1>
     </div>
   );
