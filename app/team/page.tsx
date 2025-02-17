@@ -1,39 +1,30 @@
-"use client";
-
 import Image from "next/image";
-import { AspectRatio } from "@radix-ui/react-aspect-ratio";
-import { Card, CardHeader, CardFooter } from "@/components/ui/card";
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { motion } from "framer-motion";
-import { headingAnimation, bodyAnimation } from "../../config/animations";
-import { board } from "@/config/members";
 import Link from "next/link";
+import { Metadata } from "next";
+import { metadata as metadataConfig } from "@/config/metadata";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+
+import { Card, CardHeader, CardFooter } from "@/components/ui/card";
+import { board } from "@/config/members";
+import { AnimatedTitle, AnimatedBody } from "@/components/ui/animated-sections";
+
+export const generateMetadata = (): Metadata => {
+  return {
+    title: `Team | ${metadataConfig.shortName}`,
+    description: "Meet the team behind Finova Manipal - A student-run FinTech club at Manipal Institute of Technology",
+  };
+};
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <motion.div
-        className="flex flex-col gap-6 items-center mb-16"
-        initial="hidden"
-        animate="visible"
-        variants={headingAnimation}
-        viewport={{ once: true }}
-      >
-        <h1 className="md:text-6xl text-5xl text-center mt-40 font-extrabold">BOARD</h1>
-        <p className="lg:mx-60 md:mx-32 mx-16 text-muted-foreground max-w-md text-center">
-          Our board consists of visionary leaders dedicated to fostering
-          innovation in the domains of finance and technology. Each member
-          brings unique qualities to drive our mission forward. Together, they
-          empower the next generation of changemakers.
-        </p>
-      </motion.div>
+      <AnimatedTitle
+        title="BOARD"
+        description="Our board consists of visionary leaders dedicated to fostering innovation in the domains of finance and technology. Each member brings unique qualities to drive our mission forward. Together, they empower the next generation of changemakers."
+      />
 
-      <motion.div
+      <AnimatedBody
         className="mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 lg:max-w-4xl md:max-w-2xl max-w-60"
-        initial="hidden"
-        animate="visible"
-        variants={bodyAnimation}
-        viewport={{ once: true }}
       >
         {board.map((member, index) => (
           <Card key={index} className="shadow-md w-full h-full">
@@ -66,7 +57,7 @@ export default function Home() {
             </CardFooter>
           </Card>
         ))}
-      </motion.div>
+      </AnimatedBody>
     </main>
   );
 }
