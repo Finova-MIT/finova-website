@@ -32,7 +32,7 @@ export default function Hero() {
             Introducing
           </motion.span>
           <motion.span
-          className="md:text-5xl text-7xl font-black relative overflow-hidden inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#30d5c8] to-[#23e8d1] via-[#dfdfdf] to-20% via-10% whitespace-nowrap fill-mode-forwards animate-[shine_1.5s_infinite_linear] bg-[200%_auto] bg-[0]"
+            className="md:text-5xl text-7xl font-black relative overflow-hidden inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#30d5c8] to-[#23e8d1] via-[#dfdfdf] to-20% via-10% whitespace-nowrap fill-mode-forwards animate-[shine_1.5s_infinite_linear] bg-[200%_auto] bg-[0]"
             initial="hidden"
             animate="visible"
             variants={rightHeroAnimation}
