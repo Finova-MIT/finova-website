@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-</sitemapindex>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://www.finovamanipal.org/</loc>
+  <lastmod>2025-02-17T05:22:19+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.finovamanipal.org/events</loc>
+  <lastmod>2025-02-17T05:22:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.finovamanipal.org/team</loc>
+  <lastmod>2025-02-17T05:22:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.finovamanipal.org/apply</loc>
+  <lastmod>2025-02-17T05:22:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
