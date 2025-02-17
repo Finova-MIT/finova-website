@@ -66,7 +66,15 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/manifest.json" />
       </head>
-      <body className={`min-h-screen ${gabarito.className} flex flex-col dark`}>
+      <body
+        className={`min-h-screen ${gabarito.className} flex flex-col dark relative`}
+      >
+        <div
+          className="fixed inset-0 -z-10 h-screen w-screen bg-fixed bg-center bg-repeat"
+          style={{
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/dust.png)",
+          }}
+        />
         <Navbar />
         <div className="flex-grow overflow-x-hidden">{children}</div>
         <Footer />
