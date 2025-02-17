@@ -32,33 +32,17 @@ export default function Hero() {
             Introducing
           </motion.span>
           <motion.span
-            className="md:text-5xl text-7xl font-black relative overflow-hidden inline-block text-transparent whitespace-nowrap fill-mode-forwards"
+          className="md:text-5xl text-7xl font-black relative overflow-hidden inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#30d5c8] to-[#23e8d1] via-[#dfdfdf] to-20% via-10% whitespace-nowrap fill-mode-forwards animate-[shine_1.5s_infinite_linear]"
             initial="hidden"
             animate="visible"
             variants={rightHeroAnimation}
             style={{
-              background:
-                "linear-gradient(to right, #30d5c8 0, #dfdfdf 10%, #23e8d1 20%)",
               backgroundPosition: "0",
               backgroundSize: "200% 100%",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              animation: "shine 1.5s infinite linear",
             }}
           >
             FINOVA
           </motion.span>
-
-          <style jsx>{`
-            @keyframes shine {
-              0% {
-                background-position: 200% 0;
-              }
-              100% {
-                background-position: 0% 0;
-              }
-            }
-          `}</style>
         </span>
         <motion.p
           className="md:text-2xl text-xl text-center text-muted-foreground relative z-20 md:mx-32 mx-14 md:mt-0 mt-6"
