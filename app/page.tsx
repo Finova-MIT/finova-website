@@ -10,8 +10,7 @@ import Contact from "@/components/sections/contact";
 export const generateMetadata = (): Metadata => {
   return {
     title: `Home | ${metadataConfig.shortName}`,
-    description:
-      "Homepage of Finova Manipal - A student-run FinTech club at Manipal Institute of Technology",
+    description: "Homepage of Finova Manipal - A student-run FinTech club at Manipal Institute of Technology",
   };
 };
 
