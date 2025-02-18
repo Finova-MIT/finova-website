@@ -24,7 +24,7 @@ import {
   headingAnimation,
   leftDivAnimation,
   rightDivAnimation,
-} from "../../config/animations";
+} from "@/config/animations";
 import { completedProjects, inProgressProjects } from "@/config/projects";
 import Image from "next/image";
 import Link from "next/link";
