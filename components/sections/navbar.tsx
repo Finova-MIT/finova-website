@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
+import { FiMenu, FiX } from "react-icons/fi";
+
 import { navContent } from "@/config/navigation";
 import { socials } from "@/config/socials";
 

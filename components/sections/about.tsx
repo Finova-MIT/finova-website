@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import AnimatedCounter from "../ui/animated-counter";
-import { headingAnimation, rightDivAnimation } from "../../config/animations";
 
 const stats = [
   { attribute: "Domains", value: 8 },
@@ -18,13 +16,6 @@ export default function About() {
       id="about"
       className="flex items-start justify-between lg:mx-48 md:mx-24 mx-4 md:gap-20 gap-10 pb-8 lg:pt-16 md:pt-12 pt-6"
     >
-      {/* <motion.div
-        className="flex flex-col"
-        initial="hidden"
-        whileInView="visible"
-        variants={headingAnimation}
-        viewport={{ once: true }}
-      > */}
       <div className="flex flex-col">
         <h1 className="text-4xl font-bold text-center pb-6">About Us</h1>
 
@@ -34,16 +25,7 @@ export default function About() {
           By merging the fields of finance and technology, we're not just
           building skills - we're building the future.
         </p>
-      {/* </motion.div> */}
       </div>
-
-      {/* <motion.div
-        className="grid md:grid-cols-2 gap-2"
-        initial="hidden"
-        whileInView="visible"
-        variants={rightDivAnimation}
-        viewport={{ once: true }}
-      > */}
 
       <div className="grid md:grid-cols-2 gap-2">
         {stats.map((stat, index) => (
@@ -53,14 +35,17 @@ export default function About() {
           >
             <h1 className="lg:text-4xl md:text-2xl text-xl font-black">
               <AnimatedCounter from={0} to={stat.value} />
-              {stat.more && <span className="absolute text-muted-foreground font-semibold">+</span>}
+              {stat.more && (
+                <span className="absolute text-muted-foreground font-semibold">
+                  +
+                </span>
+              )}
             </h1>
             <p className="font-bold text-muted-foreground lg:text-md md:text-sm text-xs">
               {stat.attribute.toUpperCase()}
             </p>
           </div>
         ))}
-      {/* </motion.div> */}
       </div>
     </div>
   );
