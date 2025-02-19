@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
-import { FiMenu, FiX } from "react-icons/fi";
-
 import { navContent } from "@/config/navigation";
 import { socials } from "@/config/socials";
 
@@ -22,10 +21,10 @@ export default function Navbar() {
             <Image
               src="/logo.png"
               alt="FINOVA"
-              width={32}
-              height={32}
+              width={16}
+              height={16}
               className="w-8 h-8"
-              loading="lazy"
+              priority={true}
             />
             <span className="ml-2 text-foreground font-semibold text-xl tracking-tight">
               FINOVA
@@ -48,16 +47,16 @@ export default function Navbar() {
           {/* Desktop Social Icons */}
           <div className="hidden md:flex items-center gap-4">
             {socials.map((icon, index) => (
-              <Link
-                key={index}
-                href={icon.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-muted-foreground transition-colors"
-              >
-                <icon.icon className="w-5 h-5" />
-                <span className="sr-only">{icon.name}</span>
-              </Link>
+            <Link
+              key={index}
+              href={icon.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-muted-foreground transition-colors"
+            >
+              <icon.icon className="w-5 h-5" />
+              <span className="sr-only">{icon.name}</span>
+            </Link>
             ))}
           </div>
 

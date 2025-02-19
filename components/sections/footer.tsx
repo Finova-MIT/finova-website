@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
@@ -90,8 +91,8 @@ export default function Footer() {
           <Image
             src="/logo.png"
             alt="Finova Logo"
-            width={32}
-            height={32}
+            width={16}
+            height={16}
             className="lg:w-8 md:w-8 w-4 lg:h-8 md:h-8 h-4"
             loading="lazy"
           />

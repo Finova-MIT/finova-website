@@ -1,12 +1,15 @@
 "use client";
 
 import { useState, ChangeEvent, FormEvent } from "react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
+import { Label } from "../ui/label";
+import { Button } from "../ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "../ui/toaster";
+import { bodyAnimation, headingAnimation } from "../../config/animations";
+
 interface FormData {
   name: string;
   email: string;
@@ -70,13 +73,26 @@ export default function Contact() {
       className="lg:max-w-3xl md:max-w-xl max-w-md md:px-6 lg:px-8 px-4 py-8 mx-auto"
     >
       <h1 className="text-4xl font-bold text-center md:py-12 lg:py-16 py-6">
+      {/* <motion.h1
+        className="text-4xl font-bold text-center md:py-12 lg:py-16 py-6"
+        initial="hidden"
+        whileInView="visible"
+        variants={headingAnimation}
+        viewport={{ once: true }}
+      > */}
         Contact Us
+      {/* </motion.h1> */}
       </h1>
-
-      <form
+      {/* <motion.form
         onSubmit={handleSubmit}
         className="bg-background space-y-4 border-border border-2 rounded-xl p-8 md:shadow-[0px_0px_40px_rgba(0,255,253,0.2)] mb-14"
-      >
+        initial="hidden"
+        whileInView="visible"
+        variants={bodyAnimation}
+        viewport={{ once: true }}
+      > */}
+
+      <form onSubmit={handleSubmit} className="bg-background space-y-4 border-border border-2 rounded-xl p-8 md:shadow-[0px_0px_40px_rgba(0,255,253,0.2)] mb-14">
         <div className="space-y-2">
           <Label htmlFor="name" className="block font-medium">
             Name
@@ -121,6 +137,7 @@ export default function Contact() {
           {loading ? "Submitting" : "Submit"}
         </Button>
         <Toaster />
+      {/* </motion.form> */}
       </form>
     </div>
   );
