@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import AnimatedCounter from "../ui/animated-counter";
 
@@ -18,7 +16,6 @@ export default function About() {
     >
       <div className="flex flex-col">
         <h1 className="text-4xl font-bold text-center pb-6">About Us</h1>
-
         <p className="text-muted-foreground max-w-md">
           Established in 2024, we are a student-driven community passionate
           about merging finance and technology to drive innovation and impact.
@@ -26,7 +23,6 @@ export default function About() {
           building skills - we're building the future.
         </p>
       </div>
-
       <div className="grid md:grid-cols-2 gap-2">
         {stats.map((stat, index) => (
           <div

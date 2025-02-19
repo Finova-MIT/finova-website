@@ -48,16 +48,16 @@ export default function Navbar() {
           {/* Desktop Social Icons */}
           <div className="hidden md:flex items-center gap-4">
             {socials.map((icon, index) => (
-            <Link
-              key={index}
-              href={icon.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground hover:text-muted-foreground transition-colors"
-            >
-              <icon.icon className="w-5 h-5" />
-              <span className="sr-only">{icon.name}</span>
-            </Link>
+              <Link
+                key={index}
+                href={icon.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-muted-foreground transition-colors"
+              >
+                <icon.icon className="w-5 h-5" />
+                <span className="sr-only">{icon.name}</span>
+              </Link>
             ))}
           </div>
 

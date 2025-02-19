@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { metadata as metadataConfig } from "@/config/metadata";
+
+import dynamic from "next/dynamic";
 
 const Hero = dynamic(() => import("@/components/sections/hero"));
 const About = dynamic(() => import("@/components/sections/about"));
