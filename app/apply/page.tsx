@@ -7,15 +7,12 @@ import {
   formLink,
 } from "@/config/applications";
 import { AnimatedTitle } from "@/components/ui/animated-sections";
+import { metadata as metadataConfig } from "@/config/metadata";
 
 export const generateMetadata = (): Metadata => {
   return {
-    title: isRecruitmentOpen
-      ? "Apply Now | Finova"
-      : "Applications Closed | Finova",
-    description: isRecruitmentOpen
-      ? "Join Finova by applying through our recruitment process."
-      : "Recruitment is currently closed. Check back later.",
+    title: `Apply | ${metadataConfig.shortName}`,
+    description: "Join Finova by applying through our recruitment process.",
   };
 };
 
