@@ -26,4 +26,28 @@ export const inProgressProjects = [
     timestamp: "05-01-2025",
     images: ["/projects/test1.jpg", "/projects/test2.jpg"],
   },
+  {
+    id: 2,
+    url: "",
+    title: "Quantum Portfolio Optimizer",
+    description: "Advanced portfolio optimization using quantum algorithms",
+    timestamp: "12-02-2025",
+    images: ["/projects/test1.jpg", "/projects/test2.jpg"],
+  },
+  {
+    id: 3,
+    url: "",
+    title: "DeFi Risk Analytics Platform",
+    description: "Real-time risk assessment for decentralized finance protocols",
+    timestamp: "03-04-2025",
+    images: ["/projects/test1.jpg", "/projects/test2.jpg"],
+  },
+  {
+    id: 4,
+    url: "",
+    title: "Neural Trading Signal Engine",
+    description: "Deep learning model for algorithmic trading signals",
+    timestamp: "24-05-2025",
+    images: ["/projects/test1.jpg", "/projects/test2.jpg"],
+  },
 ];
