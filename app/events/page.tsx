@@ -35,20 +35,10 @@ export default function EventsPage() {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a
-              href="https://www.instagram.com/finova.mit/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/#contact"
               className="px-6 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
             >
-              Follow on Instagram
-            </a>
-            <a
-              href="https://www.linkedin.com/company/finova-mit/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2 border border-primary text-primary rounded-md hover:bg-primary/10 transition-colors"
-            >
-              Connect on LinkedIn
+              Contact Us
             </a>
           </div>
         </div>
