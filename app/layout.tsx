@@ -75,7 +75,7 @@ export default function RootLayout({
             // backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(/dust.png)",
           // }}
         />
-        <div className="fixed inset 0 -z-20 h-screen w-screen bg-black/75" />
+        <div className="fixed inset 0 -z-20 h-screen w-screen bg-background/75" />
         <Navbar />
         <div className="flex-grow overflow-x-hidden">{children}</div>
         <Footer />

@@ -23,7 +23,6 @@ export const generateMetadata = (): Metadata => {
 };
 
 export default async function Home() {
-
   return (
     <main className="">
       <Hero />
