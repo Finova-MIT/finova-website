@@ -11,59 +11,59 @@ import {
 
 export const domains = [
   {
-    name: "Quant and Algo Trading",
+    name: "Quant",
     icon: FaChartLine,
     description:
       "Specialized in developing sophisticated algorithmic trading strategies and quantitative analysis tools for financial markets.",
     image: "/domains/quant-and-algo-trading.jpg",
   },
   {
-    name: "Finance and Banking",
+    name: "Investment Banking",
     icon: FaUniversity,
     description:
-      "Comprehensive solutions for banking systems, payment processing, and financial service applications.",
+      "Comprehensive solutions for investment banking, financial advisory, and capital markets expertise.",
     image: "/domains/finance-and-banking.jpg",
   },
   {
-    name: "Blockchain and Web3",
+    name: "Blockchain",
     icon: FaBitcoin,
     description:
       "Expertise in blockchain technology, smart contracts, and decentralized application development.",
     image: "/domains/blockchain-and-web3.jpg",
   },
   {
-    name: "Cybersecurity",
+    name: "InfoSec",
     icon: FaShieldAlt,
     description:
       "Advanced security solutions and consulting services to protect digital assets and infrastructure.",
     image: "/domains/cybersecurity.jpg",
   },
   {
-    name: "Data Analysis and Machine Learning",
+    name: "Research",
     icon: FaDatabase,
     description:
-      "Leveraging AI and ML technologies for data-driven insights and predictive analytics.",
+      "Leveraging cutting-edge research in finance, technology, and data science for innovative solutions.",
     image: "/domains/data-analysis-and-ml.jpg",
   },
   {
-    name: "Fullstack Development",
+    name: "Fintech Software",
     icon: FaCode,
     description:
-      "End-to-end web and application development using cutting-edge technologies and frameworks.",
+      "End-to-end fintech application development using cutting-edge technologies and frameworks.",
     image: "/domains/fullstack.jpg",
   },
   {
-    name: "Public Relations",
+    name: "Product",
     icon: FaBullhorn,
     description:
-      "Strategic communication and brand management services for maximum market impact.",
+      "Strategic product development and management for innovative fintech solutions.",
     image: "/domains/public-relations.jpg",
   },
   {
-    name: "Social Media and Graphic Design",
+    name: "Management",
     icon: FaPalette,
     description:
-      "Creative digital content and visual design solutions for enhanced brand presence.",
+      "Comprehensive project management and organizational strategy for optimal business outcomes.",
     image: "/domains/graphic-design.jpg",
   },
 ];
